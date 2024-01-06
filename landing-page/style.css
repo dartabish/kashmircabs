@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.hero-container {
+  height: 85vh;
+}
+
+.hero-banner {
+  height: 100%;
+}
+
+.hero-img-container {
+  height: 100%;
+}
+
+.hero-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#book-now {
+  width: 9rem;
+}
+
+/* Tablet and Desktop View */
+@media (min-width: 786px) {
+  .hero-container {
+    flex-direction: row !important;
+  }
+
+  .hero-banner {
+    width: 40%;
+  }
+
+  .hero-img-container {
+    width: 60%;
+    height: 100%;
+  }
+}
