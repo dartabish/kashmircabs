@@ -10,14 +10,31 @@
 
 .hero-container {
   height: 85vh;
+  background-image: url('https://images.unsplash.com/photo-1585503418537-88331351ad99?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #ffff;
+ 
 }
 
 .hero-banner {
   height: 100%;
+  text-align: center; 
+}
+.hero-punchline {
+  font-size: 2rem; 
+}
+
+.mini-description {
+  font-size: 1.2rem; 
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 
 .hero-img-container {
   height: 100%;
+  
 }
 
 .hero-img-container img {
@@ -44,4 +61,158 @@
     width: 60%;
     height: 100%;
   }
+}
+
+/* Form */
+.container{
+  width: 100%;
+  max-width: 650px;
+  background: rgba(254, 229, 0, 0.792);
+  padding: 28px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: inset -2px 2px 2px white;
+}
+
+.form-title{
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: solid 1px white;
+}
+
+.main-user-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+  justify-content: end;
+}
+
+.user-input-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.user-input-box label{
+  width: 95%;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input-box input{
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+.choose-taxi {
+  margin-bottom: 20px; 
+}
+
+.choose-taxi label {
+  display: block;
+  margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+.choose-taxi select {
+  height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+  
+}
+
+
+.form-submit-btn{
+  margin-top: 40px;
+}
+
+.form-submit-btn input{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border:none;
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.form-submit-btn input:hover{
+  background: rgba(255, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
+  .container{
+      min-width: 280px;
+  }
+
+  .user-input-box{
+      margin-bottom: 12px;
+      width: 100%;
+  }
+
+  .user-input-box:nth-child(2n){
+      justify-content: space-between;
+  }
+
+  .gender-category{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .main-user-info{
+      max-height: 380px;
+      overflow: auto;
+  }
+
+  .main-user-info::-webkit-scrollbar{
+      width: 0;
+  }
+}
+
+.choose-taxi select {
+  height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+  margin-top: 5px;
+}
+
+
+.choose-taxi optgroup {
+  font-weight: bold;
+  color: #333; 
+}
+
+
+.choose-taxi option {
+  padding: 8px;
+  font-size: 14px;
+  color: #555; 
+}
+
+.choose-taxi option:hover {
+  background-color: #f0f0f0; 
+  cursor: pointer;
 }

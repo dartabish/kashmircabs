@@ -18,7 +18,7 @@
       class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fs-2" href="#"> Kashmir Cabs</a>
+        <a class="navbar-brand fs-2" href="#"> Kashmir Cab Service</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -73,7 +73,7 @@
     </nav>
 
     <!-- Hero -->
-    <div class="hero-container d-flex flex-column p-4">
+    <div class="hero-container d-flex flex-column p-4 ">
       <div class="hero-banner d-flex flex-column gap-3">
         <div class="hero-punchline fs-1 fw-bold">
           Ride, Relax, Repeat – Kashmir Cabs, Your Shortcut to Seamless Travel.
@@ -86,11 +86,94 @@
         </div>
         <button id="book-now" class="btn btn-warning">Book Now!</button>
       </div>
-
-      <div class="hero-img-container">
-        <img src="../assets/landing-page/11236116_11291.jpg" alt="" />
-      </div>
     </div>
+
+      <!-- <div class="hero-img-container">
+        <img src="" alt="" />
+      </div> -->
+       <!-- Form -->
+       <div class="container">
+        <h1 class="form-title">Book Your Taxi</h1>
+        <form action="#">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="fullName">Full Name</label>
+              <input type="text"
+                      id="fullName"
+                      name="fullName"
+                      placeholder="Enter Full Name"/>
+            </div>
+            <div class="user-input-box">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      placeholder="Enter Phone Number"/>
+            </div>
+            
+            <div class="user-input-box">
+              <label for="email">Email</label>
+              <input type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter Email"/>
+            </div>
+         
+            <div class="user-input-box">
+              <label for="guests">Total Guests</label>
+              <input type="text"
+                      
+                      placeholder="No.of Guests"/>
+            </div>
+            <div class="user-input-box">
+              <label for="startTrip">Start-Trip</label>
+              <input type="text"
+                      id="start-Trip"
+                      
+                      placeholder="Start"/>
+            </div>
+            <div class="user-input-box">
+              <label for="endTrip">End-Trip</label>
+              <input type="text"
+                      id="endTrip"
+                      placeholder="End"/>
+            </div>
+          </div>
+          <div class="choose-taxi">
+            <label for="options">Choose Taxi</label>
+            <select id="options" name="options">
+              <optgroup label="Sedan">
+                <option value="sedan-option1">Toyota Etios</option>
+                <option value="sedan-option2">Honda Amaze</option>
+                <option value="sedan-option3">Maruti Suzuki Glanza</option>
+                <option value="sedan-option3"></option>
+                <!-- Add more cars for Sedan as needed -->
+              </optgroup>
+              <optgroup label="SUV 6s">
+                <option value="suv-option1"> Toyota Innova</option>
+                <option value="suv-option2">Toyota Innova Luxury</option>
+                <option value="suv-option3">Maruti Suzuki Ertiga</option>
+                <!-- Add more cars for SUV as needed -->
+              </optgroup>
+              <optgroup label="SUV 8s">
+                <option value="taxi-option1">Tavera</option>
+                <option value="taxi-option2">Travellor</option>
+                <option value="taxi-option3">Urban Crusor</option>
+                <!-- Add more taxis as needed -->
+              </optgroup>
+            </select>
+          </div>
+          
+          
+          
+          <div class="form-submit-btn">
+            <input type="submit" value="Book Now">
+          </div>
+        </form>
+
+
+
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
