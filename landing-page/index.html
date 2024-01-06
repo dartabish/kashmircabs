@@ -73,70 +73,90 @@
     </nav>
 
     <!-- Hero -->
-    <div class="hero-container d-flex flex-column p-4 ">
+    <div class="hero-container d-flex flex-column align-items-center gap-4 p-4">
       <div class="hero-banner d-flex flex-column gap-3">
         <div class="hero-punchline fs-1 fw-bold">
           Ride, Relax, Repeat – Kashmir Cabs, Your Shortcut to Seamless Travel.
         </div>
-        <div class="mini-description">
+        <!-- <div class="mini-description">
           Elevate your travel experience with [Your Company Name], where
           seamless rides and exceptional service converge to redefine your
           journey. From stylish arrivals to hassle-free departures, discover a
           new standard in transportation
-        </div>
-        <button id="book-now" class="btn btn-warning">Book Now!</button>
+        </div> -->
       </div>
+      <button id="book-now" class="btn btn-warning">Book Now!</button>
     </div>
+    <br />
 
-      <!-- <div class="hero-img-container">
+    <!-- <div class="hero-img-container">
         <img src="" alt="" />
       </div> -->
-       <!-- Form -->
-       <div class="container">
+
+    <!-- About Us -->
+    <div class="container-fluid" id="about-and-quick-book">
+      <div class="about-description">
+        <h2>Welcome To Kashmir Cabs</h2>
+        "Discover the heart and soul behind our commitment to redefine travel.
+        As a premier car rental and taxi booking service, we pride ourselves on
+        seamlessly blending comfort, convenience, and class in every ride. Our
+        dedicated team is driven by a passion for hospitality, ensuring that
+        each journey is not just a commute but a cherished adventure. At Kashmir
+        Cabs, we go beyond transportation; we curate exceptional tour packages
+        designed to showcase the beauty of every destination. Whether you're a
+        local explorer or a global wanderer, our fleet of well-maintained
+        vehicles and professional drivers are here to elevate your travel
+        experience. Learn more about our story, mission, and the values that
+        steer us forward. Join us on a virtual tour through our About section
+        and discover why Kashmir Cabs is your trusted partner for seamless rides
+        and curated travel adventures."
+      </div>
+      <br />
+      <!-- Form -->
+      <div class="container">
         <h1 class="form-title">Book Your Taxi</h1>
         <form action="#">
           <div class="main-user-info">
             <div class="user-input-box">
               <label for="fullName">Full Name</label>
-              <input type="text"
-                      id="fullName"
-                      name="fullName"
-                      placeholder="Enter Full Name"/>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter Full Name"
+              />
             </div>
             <div class="user-input-box">
               <label for="phoneNumber">Phone Number</label>
-              <input type="text"
-                      id="phoneNumber"
-                      name="phoneNumber"
-                      placeholder="Enter Phone Number"/>
+              <input
+                type="text"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Enter Phone Number"
+              />
             </div>
-            
+
             <div class="user-input-box">
               <label for="email">Email</label>
-              <input type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Enter Email"/>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email"
+              />
             </div>
-         
+
             <div class="user-input-box">
               <label for="guests">Total Guests</label>
-              <input type="text"
-                      
-                      placeholder="No.of Guests"/>
+              <input type="text" placeholder="No.of Guests" />
             </div>
             <div class="user-input-box">
               <label for="startTrip">Start-Trip</label>
-              <input type="text"
-                      id="start-Trip"
-                      
-                      placeholder="Start"/>
+              <input type="text" id="start-Trip" placeholder="Start" />
             </div>
             <div class="user-input-box">
               <label for="endTrip">End-Trip</label>
-              <input type="text"
-                      id="endTrip"
-                      placeholder="End"/>
+              <input type="text" id="endTrip" placeholder="End" />
             </div>
           </div>
           <div class="choose-taxi">
@@ -146,11 +166,10 @@
                 <option value="sedan-option1">Toyota Etios</option>
                 <option value="sedan-option2">Honda Amaze</option>
                 <option value="sedan-option3">Maruti Suzuki Glanza</option>
-                <option value="sedan-option3"></option>
                 <!-- Add more cars for Sedan as needed -->
               </optgroup>
               <optgroup label="SUV 6s">
-                <option value="suv-option1"> Toyota Innova</option>
+                <option value="suv-option1">Toyota Innova</option>
                 <option value="suv-option2">Toyota Innova Luxury</option>
                 <option value="suv-option3">Maruti Suzuki Ertiga</option>
                 <!-- Add more cars for SUV as needed -->
@@ -163,17 +182,34 @@
               </optgroup>
             </select>
           </div>
-          
-          
-          
+
           <div class="form-submit-btn">
-            <input type="submit" value="Book Now">
+            <input type="submit" value="Book Now" />
           </div>
         </form>
+      </div>
+    </div>
+    <br />
+    <br />
 
-
-
-    
+    <!-- Services -->
+    <div class="container-fluid" id="services-section">
+      <h1 class="section-title">What We Offer</h1>
+      <br />
+      <div class="service-container">
+        <div class="service">
+          <h2>Service Title</h2>
+        </div>
+        <div class="service">
+          <h2>Service Title</h2>
+        </div>
+        <div class="service">
+          <h2>Service Title</h2>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
