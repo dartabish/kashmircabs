@@ -292,6 +292,10 @@
   border-radius: 8px; 
   height: 220px;
   width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.service:hover .service-image-container {
+  transform: scale(1.1);
 }
 .service-image-container img{
   height: 100%;
