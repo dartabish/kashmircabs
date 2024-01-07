@@ -94,38 +94,52 @@
     <br />
     <!-- Form -->
     <div class="container">
-      <h1 class="form-title">Book Your Taxi</h1>
+
+      <h1 class="form-title">Book Your Taxi/Package</h1>
+      <!-- Combined Button Container -->
+      <div class="button-container">
+        <button class="booking-type-button active" data-type="taxi">Taxi</button>
+        <button class="booking-type-button" data-type="package">Package</button>
+      </div>
       <form action="#">
         <div class="main-user-info">
           <div class="user-input-box">
             <!-- <label for="fullName">Full Name</label> -->
-            <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" />
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" />
           </div>
           <div class="user-input-box">
-            <!-- <label for="phoneNumber">Phone Number</label> -->
-            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" />
+
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />
           </div>
 
           <div class="user-input-box">
-            <!-- <label for="email">Email</label> -->
-            <input type="email" id="email" name="email" placeholder="Enter Email" />
+
+            <input type="email" id="email" name="email" placeholder="Email" />
           </div>
 
           <div class="user-input-box">
-            <!-- <label for="guests">Total Guests</label> -->
+
             <input type="text" placeholder="No.of Guests" />
           </div>
           <div class="user-input-box">
-            <!-- <label for="startTrip">Start-Trip</label> -->
-            <input type="text" id="start-Trip" placeholder="Start" />
+
+            <input type="text" id="start-Trip" placeholder="Start-Trip" max="2050-12-12" />
           </div>
           <div class="user-input-box">
-            <!-- <label for="endTrip">End-Trip</label> -->
-            <input type="text" id="endTrip" placeholder="End" />
+
+            <input type="text" id="endTrip" placeholder="End-Trip" min="2024-01-01" max="2050-12-12" />
+          </div>
+          <div class="user-input-box">
+
+            <input type="text" id="From" placeholder="From" />
+          </div>
+          <div class="user-input-box">
+
+            <input type="text" id="To" placeholder="To" />
           </div>
 
           <div class="choose-taxi">
-            <!-- <label for="options">Choose Taxi</label> -->
+
             <select id="options" name="options">
               <optgroup label="Sedan">
                 <option value="sedan-option1">Choose Your Car</option>
@@ -148,11 +162,9 @@
               </optgroup>
             </select>
           </div>
-
-
-          <div class="form-submit-btn">
-            <input type="submit" value="Book Now" />
-          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Book Now" />
         </div>
       </form>
     </div>
@@ -168,30 +180,31 @@
     <div class="service-container">
       <div class="service">
         <h2 class="Service-type">Car Rental</h2>
-        
-          <div class="service-image-container">
-            <img
-              src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2017/01/20/13112-meru-cabs.jpg?itok=w49rC_CZ"
-              alt="Car Rental Image">
-          </div>
-          <div class="description">
-            <p>"Effortless travel awaits with our car rental service. Explore at your pace, enjoy comfort, and make every journey memorable with our reliable fleet."</p>
-            <button class="explore-button">Explore</button>
-          
+
+        <div class="service-image-container">
+          <img
+            src="https://www.freepnglogos.com/uploads/taxi-png/taxi-professional-airport-transportation-turlock-15.png"
+            alt="Car Rental Image">
+        </div>
+        <div class="description">
+          <p>"Effortless travel awaits with our car rental service. Explore at your pace, enjoy comfort, and make every
+            journey memorable with our reliable fleet."</p>
+          <button class="explore-button">Explore</button>
+
         </div>
       </div>
       <div class="service">
         <h2 class="service-type">Self Drive</h2>
-        
-          <div class="service-image-container">
-            <img 
-              src="https://motoringworld.in/wp-content/uploads/2021/05/Mahindra-Thar-vs-RE-Meteor-28-Copy-1020x680.jpg"
-              alt="Car Rental Image">
-          </div>
-          <div class="description">
-            <p>"Empower your journey with our self-drive service. Experience freedom on the road, flexibility in your travels, and seamless adventures at your fingertips."</p>
-            <button class="explore-button">Explore</button>
-          
+
+        <div class="service-image-container">
+          <img src="https://motoringworld.in/wp-content/uploads/2021/05/Mahindra-Thar-vs-RE-Meteor-28-Copy-1020x680.jpg"
+            alt="Car Rental Image">
+        </div>
+        <div class="description">
+          <p>"Empower your journey with our self-drive service. Experience freedom on the road, flexibility in your
+            travels, and seamless adventures at your fingertips."</p>
+          <button class="explore-button">Explore</button>
+
         </div>
 
       </div>
@@ -203,7 +216,8 @@
             alt="Car Rental Image">
         </div>
         <div class="description">
-          <p>"Embark on unforgettable journeys with our tour packages. Enjoy curated experiences, seamless travel, and discover the world with comfort and convenience."</p>
+          <p>"Embark on unforgettable journeys with our tour packages. Enjoy curated experiences, seamless travel, and
+            discover the world with comfort and convenience."</p>
           <button class="explore-button">Explore</button>
         </div>
       </div>
