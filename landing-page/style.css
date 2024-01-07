@@ -258,3 +258,67 @@
   background-color: #f0f0f0;
   cursor: pointer;
 }
+/* service-container */
+#services-section {
+  background-color: #f8f9fa; /* Set a background color for the services section */
+  padding: 40px 0; /* Add some padding for spacing */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #007BFF; /* Set the title color */
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 530px;
+  text-align: center;
+  margin: 10px;
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+}
+
+.service-image-container {
+  border-radius: 8px; 
+  height: 220px;
+  width: 100%;
+}
+.service-image-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.image-container:hover .rental-image {
+  transform: scale(1.1);
+}
+
+.description {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.explore-button {
+  padding: 10px 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
