@@ -414,6 +414,7 @@
   transform: translateX(-50%); /* Adjust the position to the center */
   text-align: center;
   color: #fff;
+  
   font-size: 29px;
   max-width: 80%; /* Limit the width of the caption */
    /* Add a semi-transparent background */
