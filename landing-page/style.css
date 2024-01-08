@@ -60,6 +60,12 @@
 }
 
 /* Services */
+/* #services-section {
+  background-image: url('https://images.unsplash.com/photo-1564329494258-3f72215ba175?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+} */
+
 .service-container {
   display: flex;
   flex-wrap: wrap;
@@ -74,12 +80,70 @@
   height: 400px;
 }
 
+/* Features */
+#features-section {
+  padding: 1rem 2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 350px;
+}
+
+.feature-box {
+  height: 90%;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.feature-icon {
+  background: linear-gradient(140deg, #f48c04 0%, #f48c04 50%, #ecb10d 50%);
+  height: 120px;
+  border: 12px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 120px;
+  border-radius: 50%;
+  transform: translateY(-30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-info {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.feature-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.feature-description {
+  padding-top: 10px;
+  color: grey;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.fa-solid {
+  color: white;
+}
+
+/* Reviews */
+#reviews-section {
+  border: 1px solid red;
+  height: 100vh;
+}
+
 /* Tablet and Desktop View */
 @media (min-width: 998px) {
-  .hero-container {
-    /* flex-direction: row !important; */
-  }
-
   /* .hero-banner {
     width: 40%;
   } */
@@ -110,7 +174,7 @@
 }
 
 /* Form */
-.container {
+.form-container {
   width: 100%;
   max-width: 500px;
   background: #ecb10d;
@@ -267,7 +331,7 @@
 .section-title {
   text-align: center;
   font-size: 36px;
-  color: #007BFF; /* Set the title color */
+  color: #007bff; /* Set the title color */
 }
 
 .service-container {
@@ -282,14 +346,14 @@
   height: 530px;
   text-align: center;
   margin: 10px;
-  background-color: #fff; 
-  border-radius: 10px; 
+  background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px; 
+  padding: 20px;
 }
 
 .service-image-container {
-  border-radius: 8px; 
+  border-radius: 8px;
   height: 220px;
   width: 100%;
   transition: transform 0.3s ease-in-out;
@@ -297,12 +361,11 @@
 .service:hover .service-image-container {
   transform: scale(1.1);
 }
-.service-image-container img{
+.service-image-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 
 .image-container:hover .rental-image {
   transform: scale(1.1);
@@ -315,7 +378,7 @@
 
 .explore-button {
   padding: 10px 16px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
