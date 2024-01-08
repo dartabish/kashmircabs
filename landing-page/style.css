@@ -378,35 +378,7 @@
 }
 
 /* Gallery section */
-#gallery-section {
-  background-color: #f8f9fa; /* Set a background color for the services section */
-  padding: 40px 0; /* Add some padding for spacing */
+.swiper {
+  width: 600px;
+  height: 300px;
 }
-
-.gallery-title {
-  text-align: center;
-  font-size: 36px;
-  color: #007BFF; /* Set the title color */
-}
-.destination-container {
-  display: flex;
-  justify-content: space-between;
-  background-position: center;
-  object-fit: cover;
-}
-/* 
-.photos{
-  display: flex;
-  justify-content: space-between;
-  height: 450px;
-  margin: 10px;
-  background-color: #fff; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px; 
-}
-.destination-image-container {
-  border-radius: 8px; 
-  height: 220px;
-  width: 100%;
-} */
