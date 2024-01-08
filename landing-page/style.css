@@ -76,14 +76,6 @@
 
 /* Tablet and Desktop View */
 @media (min-width: 998px) {
-  .hero-container {
-    /* flex-direction: row !important; */
-  }
-
-  /* .hero-banner {
-    width: 40%;
-  } */
-
   .hero-img-container {
     width: 50%;
     height: 100%;
@@ -104,7 +96,7 @@
   }
 
   /* Services section */
-   .service-container {
+  .service-container {
     flex-direction: row;
     justify-content: center;
   }
@@ -114,7 +106,7 @@
 .form-container {
   width: 100%;
   max-width: 400px;
-  background: #007BFF;;
+  background: #007bff;
   padding: 20px;
   margin: 0 auto;
   border-radius: 10px;
@@ -146,11 +138,8 @@
   .button-container {
     display: flex;
     width: 100%;
-   
-  
+
     /* Set your desired background color */
-   
-   
   }
 
   .booking-type-button {
@@ -159,7 +148,7 @@
     margin-bottom: 8px;
   }
 }
-.form-buttons{
+.form-buttons {
   width: 10px;
   display: flex;
 }
@@ -172,7 +161,6 @@
   text-shadow: 2px 2px 2px black;
   border-bottom: solid 1px white;
 }
-
 
 .main-user-info {
   display: flex;
@@ -233,8 +221,6 @@
 }
 
 .form-submit-btn input {
-  
-
   font-size: 17px;
   padding: 8px;
   border: none;
@@ -265,7 +251,6 @@
     justify-content: space-between;
   }
 
-
   .main-user-info {
     max-height: 445px;
     overflow: auto;
@@ -275,8 +260,8 @@
     width: 0;
   }
   .form-submit-btn {
-   display: flex;
-   justify-content: end;
+    display: flex;
+    justify-content: end;
   }
 }
 
@@ -314,13 +299,13 @@
 .section-title {
   text-align: center;
   font-size: 36px;
-  color: #007BFF; /* Set the title color */
+  color: #007bff; /* Set the title color */
 }
 
 .service-container {
   display: flex;
   justify-content: space-around;
-  background-image: url(""); 
+  background-image: url('');
   background-position: center;
   object-fit: cover;
 }
@@ -332,14 +317,14 @@
   height: 530px;
   text-align: center;
   margin: 10px;
-  background-color: #fff; 
-  border-radius: 10px; 
+  background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px; 
+  padding: 20px;
 }
 
 .service-image-container {
-  border-radius: 8px; 
+  border-radius: 8px;
   height: 220px;
   width: 100%;
   transition: transform 0.3s ease-in-out;
@@ -347,12 +332,11 @@
 .service:hover .service-image-container {
   transform: scale(1.1);
 }
-.service-image-container img{
+.service-image-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 
 .image-container:hover .rental-image {
   transform: scale(1.1);
@@ -365,7 +349,7 @@
 
 .explore-button {
   padding: 10px 16px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -381,7 +365,7 @@
 .swiper {
   width: 100%;
   height: 100vh; /* Adjust this value based on your design preferences */
-  overflow: hidden; 
+  overflow: hidden;
 }
 .swiper-slide {
   width: 100%;
@@ -392,10 +376,10 @@
   justify-content: center;
   align-items: center;
 }
-.swiper-title{
+.swiper-title {
   text-align: center;
   margin: 20px 0;
-  color: #0056b3;;
+  color: #0056b3;
 }
 
 .swiper-slide img {
@@ -404,4 +388,3 @@
   object-fit: cover;
   border-radius: 8px;
 }
-
