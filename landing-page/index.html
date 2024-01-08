@@ -8,9 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css" />
-  <link href="
-https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css
-" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css">
 <link rel="stylesheet" href="script.js">
 </head>
 
@@ -97,7 +95,7 @@ https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css
     </div>
     <br />
     <!-- Form -->
-    <div class="container">
+    <div class="form-container">
 
       <h1 class="form-title">Book Your Taxi/Package</h1>
       <!-- Combined Button Container -->
@@ -228,35 +226,55 @@ https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css
     </div>
     <!-- Our Best Tourist Destinations -->
     <div class="swiper">
+
+      <h1 class="swiper-title">Our Best Tourist Destinations</h1>
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
+      
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1676441019594-07142b925bc2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1577500588651-5603d971f338?q=80&w=1878&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1568889753852-196c487a536e?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3"></div>
+          <!-- Add more slides with images as needed -->
+        </div>
+        
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-
-  </div>
+  
+   
   <br />
   <br />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="
-    https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js
-    "></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 1, // Number of slides per view on desktop
+      spaceBetween: 0, // No space between slides
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1, // Number of slides per view on mobile
+          spaceBetween: 10,
+        },
+      },
+    });
+  </script>
 
   <script src="./script.js"></script>
 </body>

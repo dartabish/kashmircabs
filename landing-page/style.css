@@ -111,7 +111,7 @@
 }
 
 /* Form */
-.container {
+.form-container {
   width: 100%;
   max-width: 400px;
   background: #007BFF;;
@@ -379,6 +379,29 @@
 
 /* Gallery section */
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 100vh; /* Adjust this value based on your design preferences */
+  overflow: hidden; 
 }
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-title{
+  text-align: center;
+  margin: 20px 0;
+  color: #0056b3;;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
