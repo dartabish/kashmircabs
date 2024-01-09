@@ -1,171 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kashmir Cabs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2" href="#"> Kashmir Cab Service</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav gap-lg-4 fs-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu flex-column text-center">
+                <li>
+                  <a class="dropdown-item" href="">Car Rentals</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Self-Drive</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">Tour Packages</a>
+                </li>
+              </ul>
+            </li>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kashmir Cabs</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="script.js" />
-
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-2" href="#"> Kashmir Cab Service</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-        <ul class="navbar-nav gap-lg-4 fs-5">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu flex-column text-center">
-              <li>
-                <a class="dropdown-item" href="">Car Rentals</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="">Self-Drive</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="">Tour Packages</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero -->
-  <div class="hero-container d-flex flex-column align-items-center gap-4 p-4">
-    <div class="hero-banner d-flex flex-column gap-3">
-      <div class="hero-punchline fs-1 fw-bold">
-        Ride, Relax, Repeat – Kashmir Cabs, Your Shortcut to Seamless Travel.
-      </div>
-      <!-- <div class="mini-description">
+    <!-- Hero -->
+    <div class="hero-container d-flex flex-column align-items-center gap-4 p-4">
+      <div class="hero-banner d-flex flex-column gap-3">
+        <div class="hero-punchline fs-1 fw-bold">
+          Ride, Relax, Repeat – Kashmir Cabs, Your Shortcut to Seamless Travel.
+        </div>
+        <!-- <div class="mini-description">
           Elevate your travel experience with [Your Company Name], where
           seamless rides and exceptional service converge to redefine your
           journey. From stylish arrivals to hassle-free departures, discover a
           new standard in transportation
         </div> -->
-    </div>
-    <button id="book-now" class="btn btn-warning">Book Now!</button>
-  </div>
-  <br />
-
-  <!-- About Us -->
-  <div class="container-fluid" id="about-and-quick-book">
-    <div class="about-description">
-      <h2>Welcome To Kashmir Cabs</h2>
-      "Discover the heart and soul behind our commitment to redefine travel.
-      As a premier car rental and taxi booking service, we pride ourselves on
-      seamlessly blending comfort, convenience, and class in every ride. Our
-      dedicated team is driven by a passion for hospitality, ensuring that
-      each journey is not just a commute but a cherished adventure. At Kashmir
-      Cabs, we go beyond transportation; we curate exceptional tour packages
-      designed to showcase the beauty of every destination. Whether you're a
-      local explorer or a global wanderer, our fleet of well-maintained
-      vehicles and professional drivers are here to elevate your travel
-      experience. Learn more about our story, mission, and the values that
-      steer us forward. Join us on a virtual tour through our About section
-      and discover why Kashmir Cabs is your trusted partner for seamless rides
-      and curated travel adventures."
+      </div>
+      <button id="book-now" class="btn btn-warning">Book Now!</button>
     </div>
     <br />
-    <!-- Form -->
-    <div class="form-container">
-      <h1 class="form-title">Book Your Taxi/Package</h1>
-      <!-- Combined Button Container -->
-      <div class="button-container">
-        <button class="booking-type-button active" data-type="taxi">
-          Taxi
-        </button>
-        <button class="booking-type-button" data-type="package">
-          Package
-        </button>
+
+    <!-- About Us -->
+    <div class="container-fluid" id="about-and-quick-book">
+      <div class="about-description">
+        <h2>Welcome To Kashmir Cabs</h2>
+        "Discover the heart and soul behind our commitment to redefine travel.
+        As a premier car rental and taxi booking service, we pride ourselves on
+        seamlessly blending comfort, convenience, and class in every ride. Our
+        dedicated team is driven by a passion for hospitality, ensuring that
+        each journey is not just a commute but a cherished adventure. At Kashmir
+        Cabs, we go beyond transportation; we curate exceptional tour packages
+        designed to showcase the beauty of every destination. Whether you're a
+        local explorer or a global wanderer, our fleet of well-maintained
+        vehicles and professional drivers are here to elevate your travel
+        experience. Learn more about our story, mission, and the values that
+        steer us forward. Join us on a virtual tour through our About section
+        and discover why Kashmir Cabs is your trusted partner for seamless rides
+        and curated travel adventures."
       </div>
-      <form action="#">
-        <div class="main-user-info">
-          <div class="user-input-box">
-            <!-- <label for="fullName">Full Name</label> -->
-            <input type="text" id="fullName" name="fullName" placeholder="Full Name" />
-          </div>
-          <div class="user-input-box">
-            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />
-          </div>
-
-          <div class="user-input-box">
-            <input type="email" id="email" name="email" placeholder="Email" />
-          </div>
-
-          <div class="user-input-box">
-            <input type="text" placeholder="No.of Guests" />
-          </div>
-          <div class="user-input-box">
-            <input type="text" id="start-Trip" placeholder="Start-Trip" max="2050-12-12" />
-          </div>
-          <div class="user-input-box">
-            <input type="text" id="endTrip" placeholder="End-Trip" min="2024-01-01" max="2050-12-12" />
-          </div>
-          <div class="user-input-box">
-            <input type="text" id="From" placeholder="From" />
-          </div>
-          <div class="user-input-box">
-            <input type="text" id="To" placeholder="To" />
-          </div>
-
-          <div class="choose-taxi">
-            <select id="options" name="options">
-              <optgroup label="Sedan">
-                <option value="sedan-option1">Choose Your Car</option>
-                <option value="sedan-option1">Toyota Etios</option>
-                <option value="sedan-option2">Honda Amaze</option>
-                <option value="sedan-option3">Maruti Suzuki Glanza</option>
-                <!-- Add more cars for Sedan as needed -->
-              </optgroup>
-              <optgroup label="SUV 6s">
-                <option value="suv-option1">Toyota Innova</option>
-                <option value="suv-option2">Toyota Innova Luxury</option>
-                <option value="suv-option3">Maruti Suzuki Ertiga</option>
-                <!-- Add more cars for SUV as needed -->
-              </optgroup>
-              <optgroup label="SUV 8s">
-                <option value="taxi-option1">Tavera</option>
-                <option value="taxi-option2">Travellor</option>
-                <option value="taxi-option3">Urban Crusor</option>
-                <!-- Add more taxis as needed -->
-              </optgroup>
-            </select>
-          </div>
+      <br />
+      <!-- Form -->
+      <div class="form-container">
+        <h1 class="form-title">Book Your Taxi/Package</h1>
+        <!-- Combined Button Container -->
+        <div class="button-container">
+          <button class="booking-type-button active" data-type="taxi">
+            Taxi
+          </button>
+          <button class="booking-type-button" data-type="package">
+            Package
+          </button>
         </div>
-        <div class="form-submit-btn">
-          <input type="submit" value="Book Now" />
-        </div>
-      </form>
+        <form action="#">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <!-- <label for="fullName">Full Name</label> -->
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="user-input-box">
+              <input
+                type="text"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Phone Number"
+              />
+            </div>
+
+            <div class="user-input-box">
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </div>
+
+            <div class="user-input-box">
+              <input type="text" placeholder="No.of Guests" />
+            </div>
+            <div class="user-input-box">
+              <input
+                type="text"
+                id="start-Trip"
+                placeholder="Start-Trip"
+                max="2050-12-12"
+              />
+            </div>
+            <div class="user-input-box">
+              <input
+                type="text"
+                id="endTrip"
+                placeholder="End-Trip"
+                min="2024-01-01"
+                max="2050-12-12"
+              />
+            </div>
+            <div class="user-input-box">
+              <input type="text" id="From" placeholder="From" />
+            </div>
+            <div class="user-input-box">
+              <input type="text" id="To" placeholder="To" />
+            </div>
+
+            <div class="choose-taxi">
+              <select id="options" name="options">
+                <optgroup label="Sedan">
+                  <option value="sedan-option1">Choose Your Car</option>
+                  <option value="sedan-option1">Toyota Etios</option>
+                  <option value="sedan-option2">Honda Amaze</option>
+                  <option value="sedan-option3">Maruti Suzuki Glanza</option>
+                  <!-- Add more cars for Sedan as needed -->
+                </optgroup>
+                <optgroup label="SUV 6s">
+                  <option value="suv-option1">Toyota Innova</option>
+                  <option value="suv-option2">Toyota Innova Luxury</option>
+                  <option value="suv-option3">Maruti Suzuki Ertiga</option>
+                  <!-- Add more cars for SUV as needed -->
+                </optgroup>
+                <optgroup label="SUV 8s">
+                  <option value="taxi-option1">Tavera</option>
+                  <option value="taxi-option2">Travellor</option>
+                  <option value="taxi-option3">Urban Crusor</option>
+                  <!-- Add more taxis as needed -->
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Book Now" />
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-  <br />
-  <br />
+    <br />
+    <br />
 
     <!-- Services -->
     <div class="container-fluid" id="services-section">
@@ -279,205 +325,234 @@
       </div>
     </div>
 
-  <br />
-  <br />
-
-  <!-- Our Best Tourist Destinations -->
-  <div class="swiper destinations-swiper">
-    <h1 class="swiper-title">Our Best Tourist Destinations</h1>
-    <!-- Additional required wrapper -->
-
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide destinations-slide">
-        <img
-          src="https://images.unsplash.com/photo-1614056965546-42fbe24eb36c?q=80&w=1829&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Slide 2" />
-        <div class="caption">Dal Lake Srinagar</div>
-      </div>
-      <div class="swiper-slide destinations-slide">
-        <img
-          src="https://images.unsplash.com/photo-1676441019594-07142b925bc2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Slide 1" />
-        <div class="caption">Gulmarg Kashmir</div>
-      </div>
-      <div class="swiper-slide destinations-slide">
-        <img
-          src="https://images.unsplash.com/photo-1568889753852-196c487a536e?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Slide 3" />
-        <div class="caption">Gondola Ride Gulmarg</div>
-      </div>
-      <div class="swiper-slide destinations-slide">
-        <img src="./pexels-sam-clickx-19267288.jpg" alt="Slide 3" />
-        <div class="caption">Mughal Garden</div>
-      </div>
-      <div class="swiper-slide destinations-slide">
-        <img
-          src="https://images.unsplash.com/photo-1608824432184-b1eec5c84ae5?q=80&w=1710&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Slide 3" />
-        <div class="caption">Hari Parbat Fort</div>
-      </div>
-      <div class="swiper-slide destinations-slide">
-        <img
-          src=" https://images.unsplash.com/photo-1696182906419-b5cbbbd64818?q=80&w=1623&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Slide 3" />
-        <div class="caption">Sonamarg</div>
-      </div>
-      <div class="swiper-slide destinations-slide">
-        <img
-          src="https://images.unsplash.com/photo-1666438238521-09e3396263a9?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Slide 3" />
-        <div class="caption">Pahalgam</div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev prev-destination"></div>
-    <div class="swiper-button-next next-destination"></div>
-  </div>
-  <br />
-  <br />
-
-  <!-- Reviews -->
-  <div class="reviews-container">
-    <h1 class="section-title">Happy Clients</h1>
     <br />
-    <div class="swiper reviews-swiper d-flex align-items-center">
+    <br />
+
+    <!-- Our Best Tourist Destinations -->
+    <div class="swiper destinations-swiper">
+      <h1 class="swiper-title">Our Best Tourist Destinations</h1>
+      <!-- Additional required wrapper -->
+
       <div class="swiper-wrapper">
-        <div class="swiper-slide reviews-slide">
-          <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
-            alias magnam doloremque nisi, accusantium sunt eum perferendis
-            temporibus laudantium?
-          </p>
-          <div class="reviewer-profile">
-            <div class="picture">
-              <img src="../assets/young-bearded-man-with-striped-shirt.jpg" alt="" />
-            </div>
-            <h4>John Doe</h4>
-          </div>
+        <!-- Slides -->
+        <div class="swiper-slide destinations-slide">
+          <img
+            src="https://images.unsplash.com/photo-1614056965546-42fbe24eb36c?q=80&w=1829&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Slide 2"
+          />
+          <div class="caption">Dal Lake Srinagar</div>
         </div>
-        <div class="swiper-slide reviews-slide">
-          <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
-            alias magnam doloremque nisi, accusantium sunt eum perferendis
-            temporibus laudantium?
-          </p>
-          <div class="reviewer-profile">
-            <div class="picture">
-              <img src="../assets/young-bearded-man-with-striped-shirt.jpg" alt="" />
-            </div>
-            <h4>John Doe</h4>
-          </div>
+        <div class="swiper-slide destinations-slide">
+          <img
+            src="https://images.unsplash.com/photo-1676441019594-07142b925bc2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Slide 1"
+          />
+          <div class="caption">Gulmarg Kashmir</div>
         </div>
-        <div class="swiper-slide reviews-slide">
-          <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
-            alias magnam doloremque nisi, accusantium sunt eum perferendis
-            temporibus laudantium?
-          </p>
-          <div class="reviewer-profile">
-            <div class="picture">
-              <img src="../assets/young-bearded-man-with-striped-shirt.jpg" alt="" />
-            </div>
-            <h4>John Doe</h4>
-          </div>
+        <div class="swiper-slide destinations-slide">
+          <img
+            src="https://images.unsplash.com/photo-1568889753852-196c487a536e?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Slide 3"
+          />
+          <div class="caption">Gondola Ride Gulmarg</div>
         </div>
-        <div class="swiper-slide reviews-slide">
-          <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
-            alias magnam doloremque nisi, accusantium sunt eum perferendis
-            temporibus laudantium?
-          </p>
-          <div class="reviewer-profile">
-            <div class="picture">
-              <img src="../assets/young-bearded-man-with-striped-shirt.jpg" alt="" />
-            </div>
-            <h4>John Doe</h4>
-          </div>
+        <div class="swiper-slide destinations-slide">
+          <img src="./pexels-sam-clickx-19267288.jpg" alt="Slide 3" />
+          <div class="caption">Mughal Garden</div>
         </div>
-        <div class="swiper-slide reviews-slide">
-          <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
-            alias magnam doloremque nisi, accusantium sunt eum perferendis
-            temporibus laudantium?
-          </p>
-          <div class="reviewer-profile">
-            <div class="picture">
-              <img src="../assets/young-bearded-man-with-striped-shirt.jpg" alt="" />
-            </div>
-            <h4>John Doe</h4>
-          </div>
+        <div class="swiper-slide destinations-slide">
+          <img
+            src="https://images.unsplash.com/photo-1608824432184-b1eec5c84ae5?q=80&w=1710&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Slide 3"
+          />
+          <div class="caption">Hari Parbat Fort</div>
         </div>
-        <div class="swiper-slide reviews-slide">
-          <p class="review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
-            alias magnam doloremque nisi, accusantium sunt eum perferendis
-            temporibus laudantium?
-          </p>
-          <div class="reviewer-profile">
-            <div class="picture">
-              <img src="../assets/young-bearded-man-with-striped-shirt.jpg" alt="" />
-            </div>
-            <h4>John Doe</h4>
-          </div>
+        <div class="swiper-slide destinations-slide">
+          <img
+            src=" https://images.unsplash.com/photo-1696182906419-b5cbbbd64818?q=80&w=1623&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Slide 3"
+          />
+          <div class="caption">Sonamarg</div>
+        </div>
+        <div class="swiper-slide destinations-slide">
+          <img
+            src="https://images.unsplash.com/photo-1666438238521-09e3396263a9?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Slide 3"
+          />
+          <div class="caption">Pahalgam</div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev prev-review"></div>
-      <div class="swiper-button-next next-review"></div>
+      <div class="swiper-button-prev prev-destination"></div>
+      <div class="swiper-button-next next-destination"></div>
     </div>
-  </div>
+    <br />
+    <br />
 
-  <br />
-  <br />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
-  <script src="./script.js"></script>
-
-  <!-- Footer section -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>About Us</h4>
-          <P>"Kashmir Cab Service: Your gateway to hassle-free and comfortable travel in the stunning landscapes of
-            Kashmir. Explore with confidence, ride with convenience."</P>
-          <ul>
-
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-
-        </div>
-        <div class="footer-col">
-          <h4>Our Address</h4>
-          <ul>
-            <li><a href="#">Ishber Nishat Srinagar</a></li>
-            <li><a href="#">demo@gmail.com</a></li>
-            <li><a href="#">7006888129-8803916156-9103276655</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Follow Us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:your-email@gmail.com"><i class="far fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-globe"></i></a>
+    <!-- Reviews -->
+    <div class="reviews-container">
+      <h1 class="section-title">Happy Clients</h1>
+      <br />
+      <div class="swiper reviews-swiper d-flex align-items-center">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide reviews-slide">
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
+              alias magnam doloremque nisi, accusantium sunt eum perferendis
+              temporibus laudantium?
+            </p>
+            <div class="reviewer-profile">
+              <div class="picture">
+                <img
+                  src="../assets/young-bearded-man-with-striped-shirt.jpg"
+                  alt=""
+                />
+              </div>
+              <h4>John Doe</h4>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-slide">
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
+              alias magnam doloremque nisi, accusantium sunt eum perferendis
+              temporibus laudantium?
+            </p>
+            <div class="reviewer-profile">
+              <div class="picture">
+                <img
+                  src="../assets/young-bearded-man-with-striped-shirt.jpg"
+                  alt=""
+                />
+              </div>
+              <h4>John Doe</h4>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-slide">
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
+              alias magnam doloremque nisi, accusantium sunt eum perferendis
+              temporibus laudantium?
+            </p>
+            <div class="reviewer-profile">
+              <div class="picture">
+                <img
+                  src="../assets/young-bearded-man-with-striped-shirt.jpg"
+                  alt=""
+                />
+              </div>
+              <h4>John Doe</h4>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-slide">
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
+              alias magnam doloremque nisi, accusantium sunt eum perferendis
+              temporibus laudantium?
+            </p>
+            <div class="reviewer-profile">
+              <div class="picture">
+                <img
+                  src="../assets/young-bearded-man-with-striped-shirt.jpg"
+                  alt=""
+                />
+              </div>
+              <h4>John Doe</h4>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-slide">
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
+              alias magnam doloremque nisi, accusantium sunt eum perferendis
+              temporibus laudantium?
+            </p>
+            <div class="reviewer-profile">
+              <div class="picture">
+                <img
+                  src="../assets/young-bearded-man-with-striped-shirt.jpg"
+                  alt=""
+                />
+              </div>
+              <h4>John Doe</h4>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-slide">
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab
+              alias magnam doloremque nisi, accusantium sunt eum perferendis
+              temporibus laudantium?
+            </p>
+            <div class="reviewer-profile">
+              <div class="picture">
+                <img
+                  src="../assets/young-bearded-man-with-striped-shirt.jpg"
+                  alt=""
+                />
+              </div>
+              <h4>John Doe</h4>
+            </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev prev-review"></div>
+        <div class="swiper-button-next next-review"></div>
       </div>
-      <div class="copyright-panel">
-        <p>&copy; 2024 Kashmir Cab Service. All Rights Reserved.</p>
+    </div>
+    <br />
+    <br />
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About Us</h4>
+            <p>
+              "Kashmir Cab Service: Your gateway to hassle-free and comfortable
+              travel in the stunning landscapes of Kashmir. Explore with
+              confidence, ride with convenience."
+            </p>
+            <ul></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Address</h4>
+            <ul>
+              <li><a href="#">Ishber Nishat Srinagar</a></li>
+              <li><a href="#">demo@gmail.com</a></li>
+              <li><a href="#">7006888129-8803916156-9103276655</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:your-email@gmail.com"
+                ><i class="far fa-envelope"></i
+              ></a>
+              <a href="#"><i class="fab fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-panel">
+          <p>&copy; 2024 Kashmir Cab Service. All Rights Reserved.</p>
+        </div>
       </div>
-  </footer>
+    </footer>
 
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
