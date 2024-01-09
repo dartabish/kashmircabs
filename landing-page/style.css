@@ -196,25 +196,24 @@ h4 {
     line-height: 2;
     align-self: center;
   }
-}
 
-@media (min-width: 1200px) {
   /* Services section */
   .service {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .service-action {
-    width: 40%;
+    width: 50%;
   }
 
   .service-image {
-    width: 50%;
+    width: 60%;
   }
 }
+
 /* Form */
 .form-container {
   width: 100%;
