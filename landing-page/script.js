@@ -11,9 +11,8 @@ let destinationSwiper = new Swiper('.destinations-swiper', {
     clickable: true,
   },
   autoplay: {
-    delay: 2500,
+    delay: 2000,
     disableOnInteraction: true,
-    pauseOnMouseEnter: true,
   },
   breakpoints: {
     768: {
@@ -37,7 +36,11 @@ let reviewsSwiper = new Swiper('.reviews-swiper', {
       slidesPerView: 2,
       spaceBetween: 40,
     },
-    1024: {
+    998: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1200: {
       slidesPerView: 3,
       spaceBetween: 40,
     },

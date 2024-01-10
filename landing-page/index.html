@@ -20,7 +20,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="script.js" />
-    
   </head>
   <body>
     <!-- Navbar -->
@@ -102,9 +101,9 @@
     <!-- About Us -->
     <div class="container-fluid" id="about-and-quick-book">
       <div class="about-description">
-        <h2>Welcome To Kashmir Cabs</h2>
-        "Discover the heart and soul behind our commitment to redefine travel.
-        As a premier car rental and taxi booking service, we pride ourselves on
+        <h2 class="about-title">Welcome To Kashmir Cabs</h2>
+        Discover the heart and soul behind our commitment to redefine travel. As
+        a premier car rental and taxi booking service, we pride ourselves on
         seamlessly blending comfort, convenience, and class in every ride. Our
         dedicated team is driven by a passion for hospitality, ensuring that
         each journey is not just a commute but a cherished adventure. At Kashmir
@@ -113,27 +112,15 @@
         local explorer or a global wanderer, our fleet of well-maintained
         vehicles and professional drivers are here to elevate your travel
         experience. Learn more about our story, mission, and the values that
-        steer us forward. Join us on a virtual tour through our About section
-        and discover why Kashmir Cabs is your trusted partner for seamless rides
-        and curated travel adventures."
+        steer us forward.
       </div>
       <br />
       <!-- Form -->
       <div class="form-container">
-        <h1 class="form-title">Book Your Taxi/Package</h1>
-        <!-- Combined Button Container -->
-        <div class="button-container">
-          <button class="booking-type-button active" data-type="taxi">
-            Taxi
-          </button>
-          <button class="booking-type-button" data-type="package">
-            Package
-          </button>
-        </div>
-        <form action="#">
+        <h1 class="form-title">Book Your Cab</h1>
+        <form action="#" class="d-flex flex-column align-items-center">
           <div class="main-user-info">
             <div class="user-input-box">
-              <!-- <label for="fullName">Full Name</label> -->
               <input
                 type="text"
                 id="fullName"
@@ -198,16 +185,14 @@
                 </optgroup>
                 <optgroup label="SUV 8s">
                   <option value="taxi-option1">Tavera</option>
-                  <option value="taxi-option2">Travellor</option>
-                  <option value="taxi-option3">Urban Crusor</option>
+                  <option value="taxi-option2">Traveller</option>
+                  <option value="taxi-option3">Urbania</option>
                   <!-- Add more taxis as needed -->
                 </optgroup>
               </select>
             </div>
           </div>
-          <div class="form-submit-btn">
-            <input type="submit" value="Book Now" />
-          </div>
+          <button class="btn btn-warning">Book Now!</button>
         </form>
       </div>
     </div>
@@ -229,7 +214,7 @@
             <h4 class="service-text">
               Seamless car rentals for your journey's joyride.
             </h4>
-            <button class="explore-button">Book Now</button>
+            <button class="service-button">Book Now</button>
             <div class="service-description">
               Discover unparalleled freedom on the road with us. Our
               user-friendly platform offers a diverse fleet of vehicles for
@@ -255,7 +240,7 @@
             <h4 class="service-text">
               Simplify your commute with our reliable cab services.
             </h4>
-            <button class="explore-button">Book Now</button>
+            <button class="service-button">Book Now</button>
             <div class="service-description">
               Indulge in the epitome of stress-free commuting as our reliable
               cab services redefine convenience. We seamlessly blend efficiency
@@ -278,10 +263,9 @@
               <h2 class="service-title">Self-Drive</h2>
             </div>
             <h4 class="service-text">
-              Explore freely at your pace with our premium self-drive service,
-              turning every mile into a new adventure.
+              Explore freely at your pace with our premium self-drive service.
             </h4>
-            <button class="explore-button">Book Now</button>
+            <button class="service-button">Book Now</button>
 
             <div class="service-description">
               Embark on a journey of empowerment with our premium self-drive
@@ -309,16 +293,19 @@
               <h2 class="service-title">Tour Packages</h2>
             </div>
             <h4 class="service-text">
-              Explore our top-notch car rental service
+              Explore the world with our curated tour packages.
             </h4>
-            <button class="explore-button">Book Now</button>
-
+            <button class="service-button">Book Now</button>
             <div class="service-description">
-              Discover unparalleled freedom on the road with us. Our
-              user-friendly platform offers a diverse fleet of vehicles for
-              every occasion, from sleek city rides to spacious SUVs. With
-              transparent pricing, convenient pick-up/drop-off options, and a
-              commitment to customer satisfaction, we redefine your journey.
+              Uncover the wonders of the world with our diverse array of
+              meticulously planned tour packages. Whether you seek the thrill of
+              adventure, the serenity of nature, or the richness of cultural
+              exploration, our expertly curated itineraries cater to every
+              traveler's desires. Immerse yourself in the beauty of distant
+              lands, guided by our commitment to excellence in hospitality and
+              personalized service. Your journey begins here, where each tour
+              package is a gateway to extraordinary moments and lifelong
+              memories.
             </div>
           </div>
           <div class="service-image">
@@ -336,9 +323,8 @@
 
     <!-- Our Best Tourist Destinations -->
     <div class="swiper destinations-swiper">
-      <h1 class="swiper-title">Our Best Tourist Destinations</h1>
-      <!-- Additional required wrapper -->
-
+      <h1 class="section-title">Our Best Tourist Destinations</h1>
+      <br />
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide destinations-slide">
@@ -388,7 +374,7 @@
           <div class="caption">Pahalgam</div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination destinations-pagination"></div>
       <div class="swiper-button-prev prev-destination"></div>
       <div class="swiper-button-next next-destination"></div>
     </div>
@@ -503,60 +489,70 @@
         <div class="swiper-button-next next-review"></div>
       </div>
     </div>
-    <br />
-    <br />
 
     <!-- Footer section -->
     <footer class="footer-distributed">
-
       <div class="footer-left">
-          <h3>Kashmir<span>Cab Service</span></h3>
+        <h3>Kashmir <span>Cab Service</span></h3>
 
-          <p class="footer-links">
-              <a href="#">Home</a>
-              |
-              <a href="#">About</a>
-              |
-              <a href="#">Service</a>
-              |
-              <a href="#">Contact</a>
-          </p>
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Service</a>
+          |
+          <a href="#">Contact</a>
+        </p>
 
-          <p class="footer-company-name">Copyright © 2024 <strong>Kashmir Cab Service</strong> All rights reserved</p>
+        <p class="footer-company-name">
+          Copyright © 2024 <strong>Kashmir Cab Service</strong> All rights
+          reserved
+        </p>
       </div>
 
       <div class="footer-center">
-          <div>
-              <i class="fa fa-map-marker"></i>
-              <p><span>Ishber Nishat Srinagar</span>
-                  </p>
-          </div>
-          <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="kashmircabservice9@gmail.com">kashmircabservice9@gmail.com</a></p>
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Ishber Nishat, Srinagar</span></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="kashmircabservice9@gmail.com"
+              >kashmircabservice9@gmail.com</a
+            >
+          </p>
         </div>
 
-          <div class="phone-numbers">
-            <i class="fa fa-phone"></i>
-            <p>7006888129/</p>
-            <p>8803916156/</p>
-            <p>9103276655</p>
-          </div>
-         
+        <div class="phone-numbers">
+          <i class="fa fa-phone"></i>
+          <p>7006888129/</p>
+          <p>8803916156/</p>
+          <p>9103276655</p>
+        </div>
       </div>
       <div class="footer-right">
-          <p class="footer-company-about">
-              <span>About the company</span>
-              <strong>Kashmir Cab Service</strong>" Your gateway to hassle-free and comfortable travel in the stunning landscapes of Kashmir. Explore with confidence, ride with convenience."
-          </p>
-          <div class="footer-icons">
-              <a href="https://wa.me/7006888129" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              <a href="#"><i class="fa fa-globe"></i></a>
-              <a href="https://www.instagram.com/kashmircabservice9"><i class="fa fa-instagram"></i></a>
-              <a href="kashmircabservice9@gmail.com"><i class="fa fa-envelope"></i></a>
-          </div>
+        <p class="footer-company-about">
+          <span>About the company</span>
+          <strong>Kashmir Cab Service</strong> "Your gateway to hassle-free and
+          comfortable travel in the stunning landscapes of Kashmir. Explore with
+          confidence, ride with convenience."
+        </p>
+        <div class="footer-icons">
+          <a href="https://wa.me/7006888129" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#"><i class="fa fa-globe"></i></a>
+          <a href="https://www.instagram.com/kashmircabservice9"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="kashmircabservice9@gmail.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
+        </div>
       </div>
-  </footer>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -564,7 +560,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1165876da6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
