@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&family=Satisfy&display=swap');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-* {
+*,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,20 +19,24 @@
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  color: #007bff;
+  color: #075785;
 }
 
 .underline {
   width: 4rem;
   height: 0.25rem;
   background-color: #000000;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /*--------------- Utility Classes ----------------------*/
 
 .navbar-collapse {
   flex-grow: 0;
+}
+
+.navbar a {
+  color: #0c4a6e;
 }
 
 .hero-container {
@@ -42,7 +50,7 @@
   width: 70%;
   margin-inline: auto;
   text-align: center;
-  color: black;
+  color: #0c4a6e;
 }
 .hero-punchline {
   font-size: 2rem;
@@ -68,23 +76,29 @@
   width: 9rem;
 }
 
+/* About and Quick Book */
+#about-and-quick-book {
+  padding: 0 2rem;
+}
+
+.about-title {
+  color: #0c4a6e;
+  padding-bottom: 1rem;
+}
+
 .about-description {
-  padding: 1rem 2rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  color: #0367a1;
 }
 
 /* Services */
 
- 
-
-
 .service-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
 
-.service {
-  width: 100%;
+  align-items: center;
 }
 
 .service-action {
@@ -93,8 +107,14 @@
   justify-content: center;
 }
 
+.service-title {
+  margin-bottom: 0.75rem;
+}
+
 .service-description {
-  padding-top: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 1.8;
 }
 
 .service-image {
@@ -111,13 +131,10 @@
 /* Reviews */
 .reviews-container {
   height: 60vh;
-  
 }
 
 .reviews-swiper {
   width: 90%;
-  height: 60%;
-
 }
 
 .reviews-slide {
@@ -161,6 +178,7 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
 /* Tablet and Desktop View */
 @media (min-width: 998px) {
   .hero-img-container {
@@ -172,7 +190,6 @@
     display: flex;
     gap: 2rem;
     padding: 2rem 7rem;
-    
   }
 
   .about-description {
@@ -187,27 +204,44 @@
 @media (min-width: 1200px) {
   /* Services section */
   .service {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     gap: 3rem;
   }
 
   .service-action {
-    width: 40%;
+    width: 50%;
   }
 
   .service-image {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about-and-quick-book {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-description {
+    padding-left: 5rem;
     width: 50%;
+  }
+
+  .service {
+    width: 100%;
   }
 }
 /* Form */
 .form-container {
   width: 100%;
-  max-width: 400px;
-  background: #007bff;
+  max-width: 500px;
+  max-height: 500px;
+  background: #075785;
   padding: 20px;
-  margin: 0 auto;
+  margin-inline: auto;
   border-radius: 10px;
   box-shadow: inset -2px 2px 2px white;
 }
@@ -314,25 +348,6 @@
   padding: 0 10px;
 }
 
-.form-submit-btn {
-  display: flex;
-  justify-content: end;
-}
-
-.form-submit-btn input {
-  font-size: 17px;
-  padding: 8px;
-  border: none;
-  border-radius: 7px;
-  color: rgb(0, 0, 0);
-  background: rgba(242, 255, 1, 0.961);
-}
-
-.form-submit-btn input:hover {
-  background: rgba(0, 255, 136, 0.7);
-  color: rgb(255, 255, 255);
-}
-
 @media (max-width: 600px) {
   .container {
     min-width: 280px;
@@ -414,7 +429,8 @@
   text-align: center;
 }
 
-.explore-button {
+.service-button {
+  margin-top: 12px;
   width: 8rem;
   padding: 10px 16px;
   background-color: #007bff;
@@ -425,14 +441,14 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.explore-button:hover {
+.service-button:hover {
   background-color: #0056b3;
 }
 
 /* Gallery section */
 .destinations-swiper {
-  width: 80%;
-  height: 70vh; /* Adjust this value based on your design preferences */
+  width: 100%;
+  height: 80vh; /* Adjust this value based on your design preferences */
   overflow: hidden;
 }
 .destinations-slide {
@@ -444,6 +460,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .swiper-title {
   text-align: center;
   margin: 20px 0;
@@ -454,7 +471,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
 }
 .caption {
   position: absolute;
@@ -463,7 +479,7 @@
   transform: translateX(-50%); /* Adjust the position to the center */
   text-align: center;
   color: #fff;
-  
+
   font-size: 29px;
   max-width: 80%; /* Limit the width of the caption */
   /* Add a semi-transparent background */
@@ -493,12 +509,12 @@ footer {
   bottom: 0;
 }
 
-@media (max-height:800px) {
+@media (max-height: 800px) {
   footer {
-      position: static;
+    position: static;
   }
   header {
-      padding-top: 40px;
+    padding-top: 40px;
   }
 }
 
@@ -509,10 +525,11 @@ footer {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
-  margin-top: 80px;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
   display: inline-block;
   vertical-align: top;
 }
@@ -528,7 +545,6 @@ footer {
   font: normal 36px 'Cookie', cursive;
   margin: 0;
 }
-
 
 .footer-distributed h3 span {
   color: #e0ac1c;
@@ -596,7 +612,6 @@ footer {
 .footer-distributed .footer-center p a {
   color: #e0ac1c;
   text-decoration: none;
-  ;
 }
 
 /* Footer Right */
@@ -641,21 +656,23 @@ footer {
 }
 
 .footer-distributed .footer-icons a:hover {
-  background-color: #3F71EA;
+  background-color: #3f71ea;
 }
 
 .footer-links a:hover {
-  color: #3F71EA;
+  color: #3f71ea;
 }
 
 @media (max-width: 880px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
   }
   .footer-distributed .footer-center i {
-      margin-left: 0;
+    margin-left: 0;
   }
 }
