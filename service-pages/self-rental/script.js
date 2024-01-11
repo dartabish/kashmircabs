@@ -1,6 +1,7 @@
 const carsContainer = document.querySelector('.cars-container');
 const defaultImagePath = '../../assets/sub-pages/car-rental';
 const carCollections = [
+   
   { name: 'Toyota Etios', seats: 4, baggage: 3 ,image: "../../assets/sub-pages/car-rental/etios.png"},
   { name: 'Honda Amaze', seats: 4, baggage: 3,image: "../../assets/sub-pages/car-rental/amaze.png"},
   { name: 'Maruti Swift DZire', seats: 4, baggage: 3, image: "../../assets/sub-pages/car-rental/dzire.png"},
@@ -13,6 +14,9 @@ const carCollections = [
   { name: 'Tempo Traveller 17', seats: 17, baggage: 15,image:"../../assets/sub-pages/car-rental/tempo-17.png" },
   { name: 'Tempo Traveller 25', seats: 25, baggage: 15,image:"../../assets/sub-pages/car-rental/tempo.png" },
   { name: 'Urbania', seats: 17, baggage: 12, image:"../../assets/sub-pages/car-rental/urbania.png"},
+  { name: 'Royal Enfield Himalayan', seats: 2 ,image: "../../assets/sub-pages/car-rental/himalyan.png"},
+  { name: 'Royal Enfield Classic', seats: 2 ,image: "../../assets/sub-pages/car-rental/classic.png"},
+  { name: 'Royal Enfield Thunderbird', seats: 2 ,image: "../../assets/sub-pages/car-rental/thunderbird.png"},
 ];
 
 carCollections.forEach(car => {
