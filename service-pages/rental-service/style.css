@@ -1,4 +1,4 @@
-.cars {
+.vehicles {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,8 @@
   margin-bottom: 20px;
 }
 
-.cars-container {
+.cars-container,
+.bikes-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,7 +18,7 @@
   background-color: white;
 }
 
-.car-card {
+.vehicle-card {
   width: 350px;
   height: 400px;
   border: 1px solid #ddd;
@@ -29,26 +30,26 @@
   background-color: whitesmoke;
 }
 
-.car-img-container {
+.vehicle-img-container {
   height: 60%;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
 }
 
-.car-img-container img {
+.vehicle-img-container img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.car-details {
+.vehicle-details {
   padding: 20px;
 }
 
-.car-title {
+.vehicle-title {
   font-size: 1.5em;
   margin-bottom: 10px;
-  margin-top: 15px; /* Adjusted margin-top */
+  margin-top: 15px;
   padding: 7px;
 }
 
@@ -59,15 +60,15 @@
   margin-top: 10px;
 }
 
-.car-capacity,
-.car-baggage {
+.vehicle-capacity,
+.vehicle-baggage {
   display: block;
   margin-bottom: 8px;
   font-size: 0.9em;
   padding: 7px;
 }
 
-.btn {
+.book {
   padding: 10px 20px;
   font-size: 1em;
   color: #fff;
@@ -77,9 +78,42 @@
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   margin-top: 10px;
-  margin-right: 10px; /* Adjusted margin-right */
+  margin-right: 10px;
 }
 
-.btn:hover {
+.book:hover {
   background-color: #e67e22;
+}
+
+.vehicle-type {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 4rem;
+}
+
+.vehicle-type button {
+  font-size: 1.5rem;
+  width: 15rem;
+  background-color: #075785;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+}
+
+.vehicle-type button:hover {
+  background-color: #0e78b5;
+}
+
+.vehicle-type button:active {
+  background-color: #063d5c;
+}
+
+.send-enquiry {
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
 }
