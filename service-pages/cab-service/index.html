@@ -41,10 +41,10 @@
                                 <a class="dropdown-item" href="../rental-service/index.html">Car Rental</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="../cab-service/index.html">Cab Service</a>
+                                <a class="dropdown-item" href="../self-drive/index.html">Self Drive</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="../self-drive/index.html">Self Drive</a>
+                                <a class="dropdown-item" href="../packages/index.html">Tour Packages</a>
                             </li>
                         </ul>
                     </li>
@@ -56,95 +56,53 @@
             </div>
         </div>
     </nav>
-    <!-- Header End -->
-    <header>
-        <div class="section__container">
-            <div class="header__content">
-                <h2>Kashmir Cab Service</h2>
-                <p>
-                    Embark on a journey of a lifetime and explore the world's most
-                    breathtaking destinations with our expert travel advice. From exotic
-                    beaches to cultural wonders, we've got you covered with our
-                    comprehensive travel guides and insider tips.
-                </p>
-            </div>
+   <!-- image section -->
+   <header>
+    <div class="cab-service__container">
+        <div class="cab-service__content">
+            <h2>Kashmir Cab Service</h2>
+            <p>
+                Embark on a journey of a lifetime and explore the world's most
+                breathtaking destinations with our expert travel advice. From exotic
+                beaches to cultural wonders, we've got you covered with our
+                comprehensive travel guides and insider tips.
+            </p>
         </div>
-    </header>
+    </div>
+</header>
+<!-- form-section -->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-    <section class="journey__container">
-        <div class="section__container">
-            <h2 class="section__title">Tour Packages for Kashmir</h2>
-            <p class="section__subtitle">"Unwrap Your Adventure: Irresistible Kashmir Packages Await!"</p>
-            <div class="journey__grid">
-                <div class="country__card">
-                    <img src="../../assets/landing-page/image.jpg" alt="country" />
-                    <div class="country__name">
-                        <i class="ri-map-pin-2-fill"></i>
-                        <span>3 Days/2 Nights</span>
-                    </div>
-                    <button class="more-details-button">More Details</button>
-                </div>
-                <div class="country__card">
-                    <img src="../../assets/landing-page/stefano-bazzoli-_KhePTaoa10-unsplash.jpg" alt="country" />
-                    <div class="country__name">
-                        <i class="ri-map-pin-2-fill"></i>
-                        <span>4 Days/3 Nights</span>
-                    </div>
-                    <button class="more-details-button">More Details</button>
-                </div>
-                <div class="country__card">
-                    <img src="../../assets/landing-page/anjali-mehta-ifGGqL7K-g8-unsplash.jpg" alt="country" />
-                    <div class="country__name">
-                        <i class="ri-map-pin-2-fill"></i>
-                        <span>5 Days/4 Nights</span>
-                    </div>
-                    <button class="more-details-button">More Details</button>
-                </div>
-                <div class="country__card">
-                    <img src="../../assets/landing-page/devesh-sangwan-GloyvdgrzU8-unsplash.jpg" alt="country" />
-                    <div class="country__name">
-                        <i class="ri-map-pin-2-fill"></i>
-                        <span>6 Days/5 Nights</span>
-                    </div>
-                    <button class="more-details-button">More Details</button>
-                </div>
-                <div class="country__card">
-                    <img src="../../assets/landing-page/raimond-klavins-eUB-7ett9rw-unsplash.jpg" alt="country" />
-                    <div class="country__name">
-                        <i class="ri-map-pin-2-fill"></i>
-                        <span>7 Days/6 Nights</span>
-                    </div>
-                    <button class="more-details-button">More Details</button>
-                </div>
-                <div class="country__card">
-                    <img src="../../assets/landing-page/yogendra-singh-GINnyFQ73FE-unsplash.jpg" alt="country" />
-                    <div class="country__name">
-                        <i class="ri-map-pin-2-fill"></i>
-                        <span>Customised Kashmir Tour</span>
-                    </div>
-                    <button class="more-details-button">More Details</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
 
-    <section class="banner__container">
-        <div class="section__container">
-            <div class="package__content">
-                <h2>Discount 10-30% Off</h2>
-                <p class="package__description">
-                    Explore our curated travel packages with exclusive discounts. Whether you're
-                    seeking adventure, relaxation, or cultural experiences, we have the perfect
-                    package for you. Book now and enjoy the journey of a lifetime at unbeatable
-                    prices.
-                </p>
-            </div>
-        </div>
-    </section>
+    <label for="passengers">Total Passengers:</label>
+    <input type="number" id="passengers" name="passengers" required>
 
+    <label for="tripType">Trip Type:</label>
+    <select id="tripType" name="tripType" required>
+        <option value="arrival">Arrival</option>
+        <option value="departure">Departure</option>
+    </select>
 
+    <label for="cabType">Cab Type:</label>
+    <select id="cabType" name="cabType" required>
+        <option value="suv">Choose Vehicle</option>
+        <option value="suv">SUV</option>
+        <option value="sedan">Sedan</option>
+        <option value="tempo">Tempo</option>
+    </select>
 
-    <!-- footer section -->
+    <label for="locationPick">Pickup Location:</label>
+    <input type="text" id="locationPick" name="locationPick" required>
+
+    <label for="locationDrop">Drop Location:</label>
+    <input type="text" id="locationDrop" name="locationDrop" required>
+
+    <button type="submit">Book</button>
+</form>
 
     <footer class="footer-distributed">
         <div class="footer-left">
@@ -157,7 +115,7 @@
 
                 <a href="../landing-page/index.html#services-section">Service</a>
                 |
-                <a href="#">Contact</a>
+                <a href="../../contact-page/index.html">Contact</a>
             </p>
 
             <p class="footer-company-name">
