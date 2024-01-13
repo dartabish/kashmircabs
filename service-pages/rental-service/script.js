@@ -105,7 +105,7 @@ const bikeCollection = [
     id: 'bike-3',
     name: 'Royal Enfield Thunderbird',
     seats: 2,
-    image: '../../assets/sub-pages/car-rental/thunderbird.png',
+    image: '../../assets/sub-pages/car-rental/royal thunderbird.png',
   },
 ];
 
