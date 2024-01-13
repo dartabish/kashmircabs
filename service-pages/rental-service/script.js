@@ -67,21 +67,21 @@ const carCollection = [
     image: '../../assets/sub-pages/car-rental/tempo12.png',
   },
   {
-    id: 'car-1',
+    id: 'car-10',
     name: 'Tempo Traveller 17',
     seats: 17,
     baggage: 15,
     image: '../../assets/sub-pages/car-rental/tempo-17.png',
   },
   {
-    id: 'car-1',
+    id: 'car-11',
     name: 'Tempo Traveller 25',
     seats: 25,
     baggage: 15,
     image: '../../assets/sub-pages/car-rental/tempo.png',
   },
   {
-    id: 'car-1',
+    id: 'car-12',
     name: 'Urbania',
     seats: 17,
     baggage: 12,
@@ -141,6 +141,20 @@ vehicleBtns.forEach(vehicleBtn => {
   });
 });
 
+function getFormData(vehicleId) {
+  return {
+    serviceType: document.getElementById(`floatingService${vehicleId}`).value,
+    selectedVehicle: document.getElementById(`floatingVehicle${vehicleId}`)
+      .value,
+    name: document.getElementById(`floatingFullName${vehicleId}`).value,
+    phone: document.getElementById(`floatingPhone${vehicleId}`).value,
+    date: document.getElementById(`floatingDate${vehicleId}`).value,
+    time: document.getElementById(`floatingTime${vehicleId}`).value,
+    email: document.getElementById(`floatingEmail${vehicleId}`).value,
+    message: document.getElementById(`floatingMessage${vehicleId}`).value,
+  };
+}
+
 function displayVehicles(object, container) {
   object.forEach(vehicle => {
     let card = document.createElement('div');
@@ -181,33 +195,53 @@ function displayVehicles(object, container) {
                 </div>
               <hr>
               <div class="booking-details">
-               <p>Selected Vehicle : ------------- ${vehicle.name}</p>
               </div>
-              <div class="contact-and-pickup-details">
-              <h4>Contact and Pickup Details</h4>
-              <hr>
-              <form id="bookingForm${vehicle.id}" action="https://formspree.io/f/xwkgplyq"  method="POST">
+              <form id="bookingForm${vehicle.id}" class="booking-form" data-vehicle-id="${vehicle.id}"  method="POST">
+              <div class="form-floating mb-2">
+              <input
+              value="Vehicle Rental"
+              type="text"
+              name="Selected Service"
+              class="form-control"
+              id="floatingService${vehicle.id}"
+              placeholder="Selected Service"
+              required
+              />
+            <label for="floatingService${vehicle.id}">Selected Service</label>
+            </div>
+              <div class="form-floating mb-2">
+              <input
+              value="${vehicle.name}"
+              type="text"
+              name="Selected Vehicle"
+              class="form-control"
+              id="floatingVehicle${vehicle.id}"
+              placeholder="Selected Vehicle"
+              required
+              />
+            <label for="floatingVehicle${vehicle.id}">Selected Car</label>
+            </div>
                 <div class="form-floating mb-2">
                   <input
                   type="text"
                   name="Full Name"
                   class="form-control"
-                  id="floatingFullName"
+                  id="floatingFullName${vehicle.id}"
                   placeholder="Full Name"
                   required
                   />
-                <label for="floatingFullName">Full Name</label>
+                <label for="floatingFullName${vehicle.id}">Full Name</label>
                 </div>
                 <div class="form-floating mb-2">
                  <input
                  type="tel"
                  name="Phone"
                  class="form-control"
-                 id="floatingPhone"
+                 id="floatingPhone${vehicle.id}"
                  placeholder="Phone"
                   required
                  />
-                  <label for="floatingPhone">Phone</label>
+                  <label for="floatingPhone${vehicle.id}">Phone</label>
                 </div>
                 <div class="row ps-2 pe-2">
                    <div class="form-floating mb-2 col p-1">
@@ -215,22 +249,22 @@ function displayVehicles(object, container) {
                       type="date"
                       name="Date"
                       class="form-control"
-                      id="floatingDate"
+                      id="floatingDate${vehicle.id}"
                       placeholder="Select Date"
                       required
                       />
-                      <label for="floatingDate">Select Date</label>
+                      <label for="floatingDate${vehicle.id}">Select Date</label>
                    </div>
                    <div class="form-floating mb-2 col p-1">
                       <input
                        type="time"
                        name="Time"
                        class="form-control"
-                       id="floatingTime"
+                       id="floatingTime${vehicle.id}"
                        placeholder="Select Time"
                        required
                       />
-                      <label for="floatingTime">Select Time</label>
+                      <label for="floatingTime${vehicle.id}">Select Time</label>
                    </div>
                  </div>
                  <div class="form-floating mb-2">
@@ -238,25 +272,25 @@ function displayVehicles(object, container) {
                     type="email"
                     name="Email"
                     class="form-control"
-                    id="floatingEmail"
+                    id="floatingEmail${vehicle.id}"
                     placeholder="Email" 
                    />
-                   <label for="floatingEmail">Email (Optional)</label>
+                   <label for="floatingEmail${vehicle.id}">Email (Optional)</label>
                  </div>
                  <div class="form-floating mb-2">
                     <textarea
                      class="form-control"
                      name="Message"
-                     id="floatingMessage"
+                     id="floatingMessage${vehicle.id}"
                      placeholder="Message"
                      rows="4"
                     cols="50"
                     ></textarea>
-                    <label for="floatingMessage">Message</label>
+                    <label for="floatingMessage${vehicle.id}">Message</label>
                  </div>
-               <button type="submit" class="send-enquiry btn btn-warning mt-2">Send Enquiry</button>
+               <button id="submitForm" type="submit" class="send-enquiry btn btn-warning mt-2">Send Enquiry</button>
              </form>
-            </div>
+           
           </div>
          </div>
       </div>
@@ -265,3 +299,57 @@ function displayVehicles(object, container) {
     container.appendChild(card);
   });
 }
+
+/* document
+  .getElementById(`bookingForm${vehicle.id}`)
+  .addEventListener('submit', e => {
+    console.log('work');
+    e.preventDefault();
+
+    const formData = getFormData(vehicle.id);
+
+    let url = 'https://wa.me/919797231194?text=';
+    for (const [key, value] of Object.entries(formData)) {
+      url += `${key}: ${encodeURIComponent(value)}%0a`;
+    }
+
+    window.open(url, '_blank').focus();
+  });
+ */
+
+// Function to handle form submission
+function handleFormSubmission(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Extract form data
+  let vehicleId = event.target.getAttribute('data-vehicle-id');
+  let formData = {
+    service: event.target.querySelector(`#floatingService${vehicleId}`).value,
+    vehicle: event.target.querySelector(`#floatingVehicle${vehicleId}`).value,
+    fullName: event.target.querySelector(`#floatingFullName${vehicleId}`).value,
+    phone: event.target.querySelector(`#floatingPhone${vehicleId}`).value,
+    date: event.target.querySelector(`#floatingDate${vehicleId}`).value,
+    time: event.target.querySelector(`#floatingTime${vehicleId}`).value,
+    email: event.target.querySelector(`#floatingEmail${vehicleId}`).value,
+    message: event.target.querySelector(`#floatingMessage${vehicleId}`).value,
+  };
+
+  let url = 'https://wa.me/919797231194?text=';
+  for (const [key, value] of Object.entries(formData)) {
+    url += `${key}: ${encodeURIComponent(value)}%0a`;
+  }
+
+  window.open(url, '_blank').focus();
+}
+
+// Add a global event listener for form submissions
+document.addEventListener('submit', function (event) {
+  if (event.target.classList.contains('booking-form')) {
+    handleFormSubmission(event);
+  }
+
+  location.reload();
+});
+
+// Call displayVehicles function to display product cards
+// displayVehicles(object, container);
