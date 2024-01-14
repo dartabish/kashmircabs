@@ -25,17 +25,45 @@ header {
         rgba(45, 92, 132, 0.5),
         rgba(45, 92, 132, 0.5)
       ),
-      url("https://images.unsplash.com/photo-1508690471604-cafd081190a1?q=80&w=1696&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      url("../../assets/landing-page/airplane.jpg");
     background-position: top top;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
-  header .cab-service__container{
+  header .cab-service__container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  .cab-service__container .hidden {
+    display: none;
+  }
+  
+  .cab-service__container h2 {
+    font-size: 2.5rem; /* Initial font size */
+    transition: font-size 2s ease-in-out; 
+  }
+  
+  .cab-service__container p {
+    
+    transition: opacity 1s ease-in-out; /* Opacity transition */
+    color: #fff;
+  }
+  .cab-service__container.show-content p {
+    opacity: 1; /* Make the paragraph visible after the opacity transition */
+  }
+  /* Larger font size */
+  .cab-service__container.first-visit h2 {
+    font-size: 3rem;
+  }
+  
+  /* Even larger font size for subsequent visits */
+  .cab-service__container.larger-font h2 {
+    font-size: 4rem;
   }
   
   .cab-service__content {
@@ -64,40 +92,123 @@ header {
     background-color: #f4f4f4;
 }
 
-form {
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  width: 100%;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.form-row {
+  flex: 0 0 calc(20% - .5rem); /* Adjust the percentage as needed */
+  
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 input, select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#name{
+  width: 55%;
+}
+#date {
+  width: 40%;
+}
+#tripType{
+  width: 30%;
 }
 
-button {
+
+#passengers {
+  width: 40%; /* Adjust as needed */
+}
+
+#locationPick, #locationDrop {
+  width: 50%;
+}
+
+.button-group {
+    display: flex;
+}
+
+.trip-button {
+
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    color: black;
+}
+
+.trip-button.active {
     background-color: #4caf50;
     color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+}
+
+/* Optional: Style for better appearance */
+
+.cab-button:hover {
+  background-color: #ddd;
 }
 
 button:hover {
+  background-color: #45a049;
+}
+.cab-button {
+  width: 25%;
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  color: black;
+}
+
+.cab-button.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+  .form-row {
+    flex: 0 0 calc(100% - 2rem); 
+  }
+#name,#date,#tripType,#passengers,#locationPick, #locationDrop{
+  width: 100%;
+}
+  
+}
+.cab-service-book{
+  width: 7%;
+  height: 7%;
+  padding: 13px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cab-service-book:hover {
     background-color: #45a049;
 }
