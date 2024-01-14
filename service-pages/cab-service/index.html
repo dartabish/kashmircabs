@@ -1,184 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../../landing-page/style.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5">
-        <div class="container-fluid">
-            <a class="navbar-brand fs-2" href="#"> Kashmir Cab Service</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-lg-4 fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../landing-page/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../about-page/index.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu flex-column text-center">
-                            <li>
-                                <a class="dropdown-item" href="../rental-service/index.html">Car Rental</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../self-drive/index.html">Self Drive</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../packages/index.html">Tour Packages</a>
-                            </li>
-                        </ul>
-                    </li>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2" href="#"> Kashmir Cab Service</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav gap-lg-4 fs-5">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../../landing-page/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../about-page/index.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu flex-column text-center">
+                <li>
+                  <a class="dropdown-item" href="../rental-service/index.html"
+                    >Car Rental</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../self-drive/index.html"
+                    >Self Drive</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../packages/index.html"
+                    >Tour Packages</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact-page/index.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact-page/index.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-   <!-- image section -->
-   <header>
-    <div class="cab-service__container">
+    <!-- image section -->
+    <header>
+      <div class="cab-service__container">
         <div class="cab-service__content">
-            <h2>Airport Taxi Services</h2>
-            <p>
-                "Seamless and Convenient Transportation to and from the Airport"
-            </p>
+          <h2>Airport Taxi Services</h2>
+          <p>
+            "Seamless and Convenient Transportation to and from the Airport"
+          </p>
         </div>
-    </div>
-</header>
-<!-- form-section -->
-<form class="booking-form">
-    <div class="form-row">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
+      </div>
+    </header>
+    <br />
 
-    <div class="form-row">
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
-    </div>
-
-    <div class="form-row">
-        <label for="passengers">Total Guests:</label>
-        <input type="text" id="passengers" name="passengers" required>
-    </div>
-
-    <div class="form-row">
-        <label>Trip Type:</label>
-        <div class="button-group">
-            <button type="button" class="trip-button active" data-value="arrival">Arrival</button>
-            <button type="button" class="trip-button" data-value="departure">Departure</button>
-            <input type="hidden" id="tripType" name="tripType" value="arrival" required>
+    <!-- Form -->
+    <div class="form-container p-4">
+      <h1 class="section-title">Book Your Airport Cab</h1>
+      <br />
+      <form id="cab-form" action="" class="d-flex flex-column">
+        <div class="row">
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="fullName"
+              placeholder="Full Name"
+            />
+            <label for="fullName">Full Name</label>
+          </div>
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="phone"
+              placeholder="Phone"
+            />
+            <label for="phone">Phone</label>
+          </div>
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <input
+              required
+              type="date"
+              class="form-control"
+              id="date"
+              placeholder="Date"
+            />
+            <label for="date">Date</label>
+          </div>
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <input
+              required
+              type="number"
+              class="form-control"
+              id="guests"
+              placeholder="No. of Guests"
+            />
+            <label for="guests">No. of Guests</label>
+          </div>
         </div>
-    </div>
-
-    <div class="form-row">
-        <label>Cab Type:</label>
-        <div class="button-group">
-            <button type="button" class="cab-button active" data-value="suv">SUV</button>
-            <button type="button" class="cab-button" data-value="sedan">Sedan</button>
-            <button type="button" class="cab-button" data-value="tempo">Tempo</button>
-            <input type="hidden" id="cabType" name="cabType" value="suv" required>
+        <div class="row">
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <select required id="trip" class="form-select">
+              <option value="Arrival">Arrival</option>
+              <option value="Departure">Departure</option>
+            </select>
+            <label for="trip">Trip Type</label>
+          </div>
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <select required id="cab" class="form-select">
+              <option value="Sedan">Sedan</option>
+              <option value="SUV">SUV</option>
+              <option value="Tempo">Tempo</option>
+            </select>
+            <label for="cab">Cab Type</label>
+          </div>
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <input
+              type="text"
+              class="form-control"
+              id="pickUp"
+              placeholder="Pick-Up Location"
+            />
+            <label for="pickUp">Pick-Up Location</label>
+          </div>
+          <div class="form-floating mb-2 ps-1 col-md-3">
+            <input
+              type="text"
+              class="form-control"
+              id="drop"
+              placeholder="Drop Location"
+            />
+            <label for="drop">Drop Location</label>
+          </div>
         </div>
+        <button id="cab-book" type="submit" class="btn btn-warning mt-1">
+          Book Now
+        </button>
+      </form>
     </div>
-
-    <div class="form-row">
-        <label for="locationPick">Pickup Location:</label>
-        <input type="text" id="locationPick" name="locationPick" required>
-    </div>
-
-    <div class="form-row">
-        <label for="locationDrop">Drop Location:</label>
-        <input type="text" id="locationDrop" name="locationDrop" required>
-    </div>
-  
-</form>
-
-
 
     <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3>Kashmir <span>Cab Service</span></h3>
+      <div class="footer-left">
+        <h3>Kashmir <span>Cab Service</span></h3>
 
-            <p class="footer-links">
-                <a href="../landing-page/index.html">Home</a>
-                |
+        <p class="footer-links">
+          <a href="../landing-page/index.html">Home</a>
+          |
 
+          <a href="../landing-page/index.html#services-section">Service</a>
+          |
+          <a href="../../contact-page/index.html">Contact</a>
+        </p>
 
-                <a href="../landing-page/index.html#services-section">Service</a>
-                |
-                <a href="../../contact-page/index.html">Contact</a>
-            </p>
+        <p class="footer-company-name">
+          Copyright © 2024 <strong>Kashmir Cab Service</strong> All rights
+          reserved
+        </p>
+      </div>
 
-            <p class="footer-company-name">
-                Copyright © 2024 <strong>Kashmir Cab Service</strong> All rights
-                reserved
-            </p>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Ishber Nishat, Srinagar</span></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="kashmircabservice9@gmail.com"
+              >kashmircabservice9@gmail.com</a
+            >
+          </p>
         </div>
 
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Ishber Nishat, Srinagar</span></p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p>
-                    <a href="kashmircabservice9@gmail.com">kashmircabservice9@gmail.com</a>
-                </p>
-            </div>
-
-            <div class="phone-numbers">
-                <i class="fa fa-phone"></i>
-                <p>7006888129/</p>
-                <p>8803916156/</p>
-                <p>9103276655</p>
-            </div>
+        <div class="phone-numbers">
+          <i class="fa fa-phone"></i>
+          <p>7006888129/</p>
+          <p>8803916156/</p>
+          <p>9103276655</p>
         </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                <strong>Kashmir Cab Service</strong> "Your gateway to hassle-free and
-                comfortable travel in the stunning landscapes of Kashmir. Explore with
-                confidence, ride with convenience."
-            </p>
-            <div class="footer-icons">
-                <a href="https://wa.me/7006888129" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fa fa-globe"></i></a>
-                <a href="https://www.instagram.com/kashmircabservice9"><i class="fa fa-instagram"></i></a>
-                <a href="kashmircabservice9@gmail.com"><i class="fa fa-envelope"></i></a>
-            </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          <strong>Kashmir Cab Service</strong> "Your gateway to hassle-free and
+          comfortable travel in the stunning landscapes of Kashmir. Explore with
+          confidence, ride with convenience."
+        </p>
+        <div class="footer-icons">
+          <a href="https://wa.me/7006888129" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#"><i class="fa fa-globe"></i></a>
+          <a href="https://www.instagram.com/kashmircabservice9"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="kashmircabservice9@gmail.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1165876da6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

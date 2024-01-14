@@ -128,9 +128,9 @@ packages.forEach(package => {
   <div class="modal-dialog modal-xl">
   <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-1" id="staticBackdropLabel">${
+        <h1 class="section-title modal-title fs-1" id="staticBackdropLabel" data-package="${
           package.packageModalTitle
-        }</h1>
+        }">${package.packageModalTitle}</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -145,8 +145,7 @@ packages.forEach(package => {
               </ul>
             </div>
             <div class="amenities">
-                <h2 class="mb-3">Amenities</h2>
-                <div class="d-flex flex-column flex-wrap g-2 ">
+                <div class="d-flex flex-column flex-xl-row justify-content-center g-2 gap-xl-5">
                     <div class="amenity mb-3">
                         <span class="amenity-icon-container">
                           <i class="fa-solid fa-calendar fa-3x"></i>
@@ -178,7 +177,9 @@ packages.forEach(package => {
                 </div>
             </div>
             <div class="book">
-            <button class="btn btn-primary mt-2">Book Now</button>
+            <button id="${
+              package.packageID
+            }" class="book-package btn btn-primary mt-2">Book Now</button>
             </div>
         </div>
       </div>
@@ -188,4 +189,34 @@ packages.forEach(package => {
   `;
 
   journeyGrid.appendChild(packageCard);
+});
+
+const bookBtns = document.querySelectorAll('.book-package');
+bookBtns.forEach(btn => {
+  btn.addEventListener('click', e => {
+    let selectedPackage;
+    switch (e.target.id) {
+      case '1':
+        selectedPackage = packages[0].packageModalTitle;
+        break;
+      case '2':
+        selectedPackage = packages[1].packageModalTitle;
+        break;
+      case '3':
+        selectedPackage = packages[2].packageModalTitle;
+        break;
+      case '4':
+        selectedPackage = packages[3].packageModalTitle;
+        break;
+      case '5':
+        selectedPackage = packages[4].packageModalTitle;
+        break;
+    }
+
+    let url =
+      'https://wa.me/919797231194?text=' +
+      'Hi, I want to book the ' +
+      selectedPackage;
+    window.open(url, '_blank').focus();
+  });
 });
