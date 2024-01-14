@@ -24,9 +24,9 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5"
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between"
     >
-      <div class="container-fluid">
+      <div class="container-fluid ps-lg-5 pe-lg-5">
         <a class="navbar-brand fs-2" href="#">Kashmir Cab Service</a>
         <button
           class="navbar-toggler"
@@ -80,11 +80,15 @@
                   <a
                     class="dropdown-item"
                     href="../service-pages/self-drive/index.html"
-                    >Self-Drive</a
+                    >Chauffeur-Driven</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../service-pages/packages/index.html">Tour Packages</a>
+                  <a
+                    class="dropdown-item"
+                    href="../service-pages/packages/index.html"
+                    >Tour Packages</a
+                  >
                 </li>
               </ul>
             </li>
@@ -101,7 +105,8 @@
     <div class="hero-container d-flex flex-column align-items-center gap-4 p-4">
       <div class="hero-banner d-flex flex-column gap-3">
         <div class="hero-punchline fs-1 fw-bold">
-          Ride, Relax, Repeat – Kashmir Cabs, Your Shortcut to Seamless Travel.
+          Ride, Relax, Repeat – Kashmir Cab Service, Your Shortcut to Seamless
+          Travel.
         </div>
         <!-- <div class="mini-description">
           Elevate your travel experience with [Your Company Name], where
@@ -110,7 +115,11 @@
           new standard in transportation
         </div> -->
       </div>
-      <button id="book-now" class="btn btn-warning">Book Now!</button>
+      <a href="#services-section">
+        <button id="explore-our-services" class="btn btn-warning">
+          Explore Our Services!
+        </button>
+      </a>
     </div>
     <br />
 
@@ -131,85 +140,9 @@
         steer us forward.
       </div>
       <br />
-      <!-- Form -->
-      <div class="form-container">
-        <h1 class="form-title">Book Your Cab</h1>
-        <form action="#" class="d-flex flex-column align-items-center">
-          <div class="main-user-info">
-            <div class="user-input-box">
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                placeholder="Full Name"
-              />
-            </div>
-            <div class="user-input-box">
-              <input
-                type="text"
-                id="phoneNumber"
-                name="phoneNumber"
-                placeholder="Phone Number"
-              />
-            </div>
 
-            <div class="user-input-box">
-              <input type="email" id="email" name="email" placeholder="Email" />
-            </div>
-
-            <div class="user-input-box">
-              <input type="text" placeholder="No.of Guests" />
-            </div>
-            <div class="user-input-box">
-              <input
-                type="text"
-                id="start-Trip"
-                placeholder="Start-Trip"
-                max="2050-12-12"
-              />
-            </div>
-            <div class="user-input-box">
-              <input
-                type="text"
-                id="endTrip"
-                placeholder="End-Trip"
-                min="2024-01-01"
-                max="2050-12-12"
-              />
-            </div>
-            <div class="user-input-box">
-              <input type="text" id="From" placeholder="From" />
-            </div>
-            <div class="user-input-box">
-              <input type="text" id="To" placeholder="To" />
-            </div>
-
-            <div class="choose-taxi">
-              <select id="options" name="options">
-                <optgroup label="Sedan">
-                  <option value="sedan-option1">Choose Your Car</option>
-                  <option value="sedan-option1">Toyota Etios</option>
-                  <option value="sedan-option2">Honda Amaze</option>
-                  <option value="sedan-option3">Maruti Suzuki Glanza</option>
-                  <!-- Add more cars for Sedan as needed -->
-                </optgroup>
-                <optgroup label="SUV 6s">
-                  <option value="suv-option1">Toyota Innova</option>
-                  <option value="suv-option2">Toyota Innova Luxury</option>
-                  <option value="suv-option3">Maruti Suzuki Ertiga</option>
-                  <!-- Add more cars for SUV as needed -->
-                </optgroup>
-                <optgroup label="SUV 8s">
-                  <option value="taxi-option1">Tavera</option>
-                  <option value="taxi-option2">Traveller</option>
-                  <option value="taxi-option3">Urbania</option>
-                  <!-- Add more taxis as needed -->
-                </optgroup>
-              </select>
-            </div>
-          </div>
-          <button class="btn btn-warning">Book Now!</button>
-        </form>
+      <div class="welcome-container">
+        <img src="../assets/landing-page/welcome-banner.jpg" alt="" />
       </div>
     </div>
     <br />
@@ -256,7 +189,7 @@
           <div class="service-action">
             <div>
               <div class="underline"></div>
-              <h2 class="service-title">Cab Service</h2>
+              <h2 class="service-title">Airport Cab Service</h2>
             </div>
             <h4 class="service-text">
               Simplify your commute with our reliable cab services.
@@ -415,7 +348,8 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Kashmir Cab Service – where every ride is a scenic escape, blending comfort with the breathtaking beauty of the valley."
+              "Kashmir Cab Service – where every ride is a scenic escape,
+              blending comfort with the breathtaking beauty of the valley."
             </p>
             <div class="reviewer-profile">
               <div class="picture">
@@ -429,7 +363,9 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Effortless booking, friendly drivers, and a touch of Kashmiri hospitality – Kashmir Cab Service makes your journey as memorable as the destination."
+              "Effortless booking, friendly drivers, and a touch of Kashmiri
+              hospitality – Kashmir Cab Service makes your journey as memorable
+              as the destination."
             </p>
             <div class="reviewer-profile">
               <div class="picture">
@@ -443,7 +379,8 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Kashmir Cab Service - your ticket to hassle-free journeys with a touch of warmth. Effortless, efficient, and endlessly scenic!"
+              "Kashmir Cab Service - your ticket to hassle-free journeys with a
+              touch of warmth. Effortless, efficient, and endlessly scenic!"
             </p>
             <div class="reviewer-profile">
               <div class="picture">
@@ -457,7 +394,9 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Exquisite landscapes and impeccable service – that's what Kashmir Cab Service is all about. Traveling with them is not just a ride; it's a memory in the making."
+              "Exquisite landscapes and impeccable service – that's what Kashmir
+              Cab Service is all about. Traveling with them is not just a ride;
+              it's a memory in the making."
             </p>
             <div class="reviewer-profile">
               <div class="picture">
@@ -471,7 +410,9 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Unlock the charm of Kashmir with Kashmir Cab Service - where comfort meets the extraordinary. Each ride is a story, and yours begins with them."
+              "Unlock the charm of Kashmir with Kashmir Cab Service - where
+              comfort meets the extraordinary. Each ride is a story, and yours
+              begins with them."
             </p>
             <div class="reviewer-profile">
               <div class="picture">
@@ -485,7 +426,9 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Kashmir Cab Service - Redefining travel elegance, seamlessly blending comfort and culture. Your ride with them is not just a trip; it's an enchanting experience."
+              "Kashmir Cab Service - Redefining travel elegance, seamlessly
+              blending comfort and culture. Your ride with them is not just a
+              trip; it's an enchanting experience."
             </p>
             <div class="reviewer-profile">
               <div class="picture">
@@ -513,11 +456,11 @@
         <p class="footer-links">
           <a href="#">Home</a>
           |
-          <a href="#">About</a>
+          <a href="../about-page/index.html">About</a>
           |
-          <a href="#">Service</a>
+          <a href="#services-section">Services</a>
           |
-          <a href="#">Contact</a>
+          <a href="../contact-page/index.html">Contact</a>
         </p>
 
         <p class="footer-company-name">
