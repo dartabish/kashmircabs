@@ -19,68 +19,26 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-header {
+
+.hero {
   height: 50vh;
   background-image: linear-gradient(
       rgba(45, 92, 132, 0.5),
       rgba(45, 92, 132, 0.5)
     ),
-    url('../../assets/landing-page/airplane.jpg');
-  background-position: top top;
+    url('https://images.unsplash.com/photo-1541945595989-a21441a816ae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-header .cab-service__container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-}
-.cab-service__container .hidden {
-  display: none;
+.hero-content {
+  color: white;
 }
 
-.cab-service__container h2 {
-  font-size: 2.5rem; /* Initial font size */
-  transition: font-size 2s ease-in-out;
-}
-
-.cab-service__container p {
-  transition: opacity 1s ease-in-out; /* Opacity transition */
-  color: #fff;
-}
-.cab-service__container.show-content p {
-  opacity: 1; /* Make the paragraph visible after the opacity transition */
-}
-/* Larger font size */
-.cab-service__container.first-visit h2 {
-  font-size: 3rem;
-}
-
-/* Even larger font size for subsequent visits */
-.cab-service__container.larger-font h2 {
-  font-size: 4rem;
-}
-
-.cab-service__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  color: var(--extra-light);
-}
-
-.cab-service__content h1 {
-  font-size: 5rem;
-  font-weight: 400;
-  line-height: 5rem;
-}
-
-.cab-service__content p {
-  text-align: center;
+.hero-content p {
+  max-width: 700px;
+  font-size: 20px;
 }
 
 body {

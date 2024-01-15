@@ -1,215 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../../landing-page/style.css" />
     <link rel="stylesheet" href="./style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5">
-        <div class="container-fluid">
-            <a class="navbar-brand fs-2" href="#"> Kashmir Cab Service</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-lg-4 fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../landing-page/index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu flex-column text-center">
-                            <li>
-                                <a class="dropdown-item" href="../service-pages/rental-service/index.html">Car Rental</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../service-pages/cab-service/index.html">Cab Service</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../service-pages/self-drive/index.html">Self Drive</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../service-pages/packages/index.html">Tour Packages</a>
-                            </li>
-                        </ul>
-                    </li>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between"
+    >
+      <div class="container-fluid p-2 ps-lg-5 pe-lg-5">
+        <a class="navbar-brand fs-2" href="#">Kashmir Cab Service</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-lg-4 fs-5"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../../landing-page/index.html"
+                  >Home</a
+                >
+              </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact-page/index.html">Contact</a>
-                    </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu flex-column text-center">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../service-pages/airport-taxi-service/index.html"
+                      >Airport Cab Service</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../service-pages/chauffeur-driven/index.html"
+                      >Chauffeur-Driven</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../service-pages/packages/index.html"
+                      >Tour Packages</a
+                    >
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../about-page/index.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../../contact-page/index.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
-   
 
     <!-- About Section-->
     <section class="about-section-page">
-        <h2>About Us</h2>
-        <h3 style="font-weight: bold">
-            Kashmir Cab Service
-        </h3>
-        <div class="about-info">
-            <div class="about-img">
-                <img src="../../assets/sub-pages/car-rental/kindpng_1747534.png" alt="Geeksforgeeks">
-            </div>
-            <div>
-                <p>Welcome to "Kashmir Cab Service," the leading taxi and best cab service provider in Srinagar,
-                    Kashmir. At Kashmir Cab Service, we're not just a transportation service; we're your trusted partner
-                    in exploring the unparalleled beauty of the Kashmir Valley.</p>
-
-                <p>Our commitment goes beyond providing reliable car rental services; it's about enhancing your journey
-                    through personalized experiences. Whether you're a solo adventurer, a couple seeking romance, or a
-                    family on vacation, we have the perfect vehicle to suit your needs.</p>
-
-                <p>Explore Kashmir at your own pace with our self-service cab option, designed for those who value
-                    independence and flexibility. Enjoy the convenience of driving through the breathtaking landscapes
-                    of Kashmir while experiencing the warmth of our hospitality.</p>
-
-                <p>At Kashmir Cab Service, we understand that every traveler is unique, and that's why we offer
-                    customizable travel packages. Immerse yourself in the rich culture, visit iconic landmarks, and
-                    create memories that last a lifetime with our thoughtfully curated packages.</p>
-
-                <div id="moreContent">
-                    <p>
-
-                    
-
-                        At Kashmir Cab Service, we take pride in offering unparalleled transportation solutions to
-                        visitors and locals alike in the breathtaking region of Kashmir. Our commitment to excellence,
-                        reliability, and customer satisfaction sets us apart as the leading cab service provider in
-                        Srinagar and the surrounding areas.
-
-                        **Explore the Beauty of Kashmir with Comfort**
-
-                        Embark on a seamless journey with our extensive fleet of vehicles, ranging from basic cabs to
-                        luxurious options. Whether you are a tourist eager to explore the enchanting landscapes or a
-                        local in need of reliable transportation, our fleet is at your service. We ensure a comfortable
-                        and safe travel experience, allowing you to focus on enjoying the beauty of Kashmir.
-
-                        **Experienced Team for Your Convenience**
-
-                        Our organization is driven by a dedicated team of over 60 professionals, working tirelessly to
-                        make "Travel My Kashmir" synonymous with top-notch taxi services. Since our establishment in
-                        2016, we have grown from a single-led movement to a full-fledged organization, earning a 100%
-                        satisfaction rate among our clientele.
-
-                        **Beyond Transportation: Hotel Tie-Ups and More**
-
-                        In addition to our cab services, we have forged strategic tie-ups with renowned hotels in the
-                        region. This allows us to provide a comprehensive travel experience, ensuring our clients have
-                        access to reliable transportation and comfortable accommodations. We are the go-to choice for
-                        hotels lacking transportation facilities, further solidifying our reputation in the industry.
-
-                        **Recognitions and Reviews**
-
-                        We are proud to have received accolades from platforms such as TripAdvisor, where our transport
-                        services have been recognized based on positive reviews from satisfied customers. Our commitment
-                        to quality and exceptional service has been acknowledged, making us a trusted choice for taxi
-                        services in the Kashmir Valley.
-
-                        **Join Us on a Journey of Excellence**
-
-                        Whether you are a local resident or a visitor to Kashmir, we invite you to join us on a journey
-                        of excellence. Explore our services, read reviews, and experience the beauty of Kashmir with the
-                        convenience of Kashmir Cab Service.
-
-                        ---
-
-                        Feel free to customize and expand upon this content to better suit the specific details and tone
-                        you want for your website.
-                    </p>
-                </div>
-
-                <button id="readMoreBtn" onclick="toggleContent()">Read More...</button>
-            </div>
+      <h2>About Us</h2>
+      <h3 style="font-weight: bold">Kashmir Cab Service</h3>
+      <div class="about-info">
+        <div class="about-img">
+          <img
+            src="../../assets/sub-pages/car-rental/kindpng_1747534.png"
+            alt="Geeksforgeeks"
+          />
         </div>
+        <div>
+          <p>
+            Welcome to "Kashmir Cab Service," the leading taxi and best cab
+            service provider in Srinagar, Kashmir. At Kashmir Cab Service, we're
+            not just a transportation service; we're your trusted partner in
+            exploring the unparalleled beauty of the Kashmir Valley.
+          </p>
+
+          <p>
+            Our commitment goes beyond providing reliable car rental services;
+            it's about enhancing your journey through personalized experiences.
+            Whether you're a solo adventurer, a couple seeking romance, or a
+            family on vacation, we have the perfect vehicle to suit your needs.
+          </p>
+
+          <p>
+            Explore Kashmir at your own pace with our self-service cab option,
+            designed for those who value independence and flexibility. Enjoy the
+            convenience of driving through the breathtaking landscapes of
+            Kashmir while experiencing the warmth of our hospitality.
+          </p>
+
+          <p>
+            At Kashmir Cab Service, we understand that every traveler is unique,
+            and that's why we offer customizable travel packages. Immerse
+            yourself in the rich culture, visit iconic landmarks, and create
+            memories that last a lifetime with our thoughtfully curated
+            packages.
+          </p>
+
+          <div id="moreContent">
+            <p>
+              At Kashmir Cab Service, we take pride in offering unparalleled
+              transportation solutions to visitors and locals alike in the
+              breathtaking region of Kashmir. Our commitment to excellence,
+              reliability, and customer satisfaction sets us apart as the
+              leading cab service provider in Srinagar and the surrounding
+              areas. **Explore the Beauty of Kashmir with Comfort** Embark on a
+              seamless journey with our extensive fleet of vehicles, ranging
+              from basic cabs to luxurious options. Whether you are a tourist
+              eager to explore the enchanting landscapes or a local in need of
+              reliable transportation, our fleet is at your service. We ensure a
+              comfortable and safe travel experience, allowing you to focus on
+              enjoying the beauty of Kashmir. **Experienced Team for Your
+              Convenience** Our organization is driven by a dedicated team of
+              over 60 professionals, working tirelessly to make "Travel My
+              Kashmir" synonymous with top-notch taxi services. Since our
+              establishment in 2016, we have grown from a single-led movement to
+              a full-fledged organization, earning a 100% satisfaction rate
+              among our clientele. **Beyond Transportation: Hotel Tie-Ups and
+              More** In addition to our cab services, we have forged strategic
+              tie-ups with renowned hotels in the region. This allows us to
+              provide a comprehensive travel experience, ensuring our clients
+              have access to reliable transportation and comfortable
+              accommodations. We are the go-to choice for hotels lacking
+              transportation facilities, further solidifying our reputation in
+              the industry. **Recognitions and Reviews** We are proud to have
+              received accolades from platforms such as TripAdvisor, where our
+              transport services have been recognized based on positive reviews
+              from satisfied customers. Our commitment to quality and
+              exceptional service has been acknowledged, making us a trusted
+              choice for taxi services in the Kashmir Valley. **Join Us on a
+              Journey of Excellence** Whether you are a local resident or a
+              visitor to Kashmir, we invite you to join us on a journey of
+              excellence. Explore our services, read reviews, and experience the
+              beauty of Kashmir with the convenience of Kashmir Cab Service. ---
+              Feel free to customize and expand upon this content to better suit
+              the specific details and tone you want for your website.
+            </p>
+          </div>
+
+          <button id="readMoreBtn" onclick="toggleContent()">
+            Read More...
+          </button>
+        </div>
+      </div>
     </section>
-
-
-
-
-
-
-
 
     <!-- Footer section -->
     <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3>Kashmir <span>Cab Service</span></h3>
+      <div class="footer-left">
+        <h3>Kashmir <span>Cab Service</span></h3>
 
-            <p class="footer-links">
-                <a href="../landing-page/index.html">Home</a>
-                |
+        <p class="footer-links">
+          <a href="../landing-page/index.html">Home</a>
+          |
 
+          <a href="../landing-page/index.html#services-section">Service</a>
+          |
+          <a href="../contact-page/index.html">Contact</a>
+        </p>
 
-                <a href="../landing-page/index.html#services-section">Service</a>
-                |
-                <a href="../contact-page/index.html">Contact</a>
-            </p>
+        <p class="footer-company-name">
+          Copyright © 2024 <strong>Kashmir Cab Service</strong> All rights
+          reserved
+        </p>
+      </div>
 
-            <p class="footer-company-name">
-                Copyright © 2024 <strong>Kashmir Cab Service</strong> All rights
-                reserved
-            </p>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Ishber Nishat, Srinagar</span></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="kashmircabservice9@gmail.com"
+              >kashmircabservice9@gmail.com</a
+            >
+          </p>
         </div>
 
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Ishber Nishat, Srinagar</span></p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p>
-                    <a href="kashmircabservice9@gmail.com">kashmircabservice9@gmail.com</a>
-                </p>
-            </div>
-
-            <div class="phone-numbers">
-                <i class="fa fa-phone"></i>
-                <p>7006888129/</p>
-                <p>8803916156/</p>
-                <p>9103276655</p>
-            </div>
+        <div class="phone-numbers">
+          <i class="fa fa-phone"></i>
+          <p>7006888129/</p>
+          <p>8803916156/</p>
+          <p>9103276655</p>
         </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                <strong>Kashmir Cab Service</strong> "Your gateway to hassle-free and
-                comfortable travel in the stunning landscapes of Kashmir. Explore with
-                confidence, ride with convenience."
-            </p>
-            <div class="footer-icons">
-                <a href="https://wa.me/7006888129" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fa fa-globe"></i></a>
-                <a href="https://www.instagram.com/kashmircabservice9"><i class="fa fa-instagram"></i></a>
-                <a href="kashmircabservice9@gmail.com"><i class="fa fa-envelope"></i></a>
-            </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          <strong>Kashmir Cab Service</strong> "Your gateway to hassle-free and
+          comfortable travel in the stunning landscapes of Kashmir. Explore with
+          confidence, ride with convenience."
+        </p>
+        <div class="footer-icons">
+          <a href="https://wa.me/7006888129" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#"><i class="fa fa-globe"></i></a>
+          <a href="https://www.instagram.com/kashmircabservice9"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="kashmircabservice9@gmail.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1165876da6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -26,8 +26,8 @@ contactForm.addEventListener('submit', e => {
   const message = document.getElementById('message').value;
 
   let url =
-    'https://wa.me/919797231194?text=' +
-    'You have a message from a visitor' +
+    'https://wa.me/917006888129?text=' +
+    'You have a visitor!' +
     '%0aName: ' +
     encodeURIComponent(name) +
     '%0aPhone: ' +

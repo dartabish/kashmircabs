@@ -214,7 +214,7 @@ bookBtns.forEach(btn => {
     }
 
     let url =
-      'https://wa.me/919797231194?text=' +
+      'https://wa.me/917006888129?text=' +
       'Hi, I want to book the ' +
       selectedPackage;
     window.open(url, '_blank').focus();

@@ -172,7 +172,7 @@ function displayVehicles(object, container) {
               Seats: ${vehicle.seats} </span>
               <span class="vehicle-baggage">
               <i class="fa-solid fa-suitcase-rolling"></i>
-              Baggage :${vehicle.baggage} </span>
+              Baggage: ${vehicle.baggage} </span>
             </div>
             <button type="button" class="book btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal${vehicle.id}">
               Book Now
@@ -219,7 +219,7 @@ function displayVehicles(object, container) {
               placeholder="Selected Vehicle"
               required
               />
-            <label for="floatingVehicle${vehicle.id}">Selected Car</label>
+            <label for="floatingVehicle${vehicle.id}">Selected Vehicle</label>
             </div>
                 <div class="form-floating mb-2">
                   <input
@@ -334,10 +334,24 @@ function handleFormSubmission(event) {
     message: event.target.querySelector(`#floatingMessage${vehicleId}`).value,
   };
 
-  let url = 'https://wa.me/919797231194?text=';
-  for (const [key, value] of Object.entries(formData)) {
-    url += `${key}: ${encodeURIComponent(value)}%0a`;
-  }
+  let url =
+    'https://wa.me/917006888129?text=' +
+    'Selected Service: ' +
+    encodeURIComponent(formData.service) +
+    '%0aSelected Vehicle: ' +
+    encodeURIComponent(formData.vehicle) +
+    '%0aName: ' +
+    encodeURIComponent(formData.fullName) +
+    '%0aPhone: ' +
+    encodeURIComponent(formData.phone) +
+    '%0aDate: ' +
+    encodeURIComponent(formData.date) +
+    '%0aTime: ' +
+    encodeURIComponent(formData.time) +
+    '%0aEmail: ' +
+    encodeURIComponent(formData.email) +
+    '%0aMessage: ' +
+    encodeURIComponent(formData.message);
 
   window.open(url, '_blank').focus();
 }

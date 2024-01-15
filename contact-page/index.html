@@ -30,79 +30,93 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between ps-lg-5 pe-lg-5"
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between"
     >
-      <div class="container-fluid">
-        <a class="navbar-brand fs-2" href="#"> Kashmir Cab Service</a>
+      <div class="container-fluid p-2 ps-lg-5 pe-lg-5">
+        <a class="navbar-brand fs-2" href="#">Kashmir Cab Service</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse text-center"
-          id="navbarNavDropdown"
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
         >
-          <ul class="navbar-nav gap-lg-4 fs-5">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="../../landing-page/index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about-page/index.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Services
-              </a>
-              <ul class="dropdown-menu flex-column text-center">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../service-pages/rental-service/index.html"
-                    >Car Rental</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../service-pages/cab-service/index.html"
-                    >Cab Service</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../service-pages/self-drive/index.html"
-                    >Self Drive</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../service-pages/packages/index.html"
-                    >Tour Packages</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-lg-4 fs-5"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../../landing-page/index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu flex-column text-center">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../service-pages/airport-taxi-service/index.html"
+                      >Airport Cab Service</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../service-pages/chauffeur-driven/index.html"
+                      >Chauffeur-Driven</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../service-pages/packages/index.html"
+                      >Tour Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../about-page/index.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../../contact-page/index.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -112,7 +126,7 @@
       <span class="big-circle"></span>
       <div class="form-contact-section">
         <div class="contact-info">
-          <h3 class="title">"Get in Touch with Kashmir Cab Service"</h3>
+          <h1 class="title">Get in touch with Kashmir Cab Service</h1>
           <p class="text">
             We're here to make your journey memorable and hassle-free. Book your
             ride with Kashmir Cab Service today.
@@ -120,13 +134,16 @@
 
           <div class="info">
             <div class="information">
-              <p>Ishber Nishat Sgr 191121</p>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>Ishber Nishat, Srinagar, 191121</div>
             </div>
             <div class="information">
-              <p>kashmircabservice9@gmail.com</p>
+              <i class="fa-solid fa-envelope"></i>
+              <div>kashmircabservice9@gmail.com</div>
             </div>
             <div class="information">
-              <p>7006888129/ 8803916156/ 9103276655</p>
+              <i class="fa-solid fa-phone"></i>
+              <div>7006888129/ 8803916156/ 9103276655</div>
             </div>
           </div>
 

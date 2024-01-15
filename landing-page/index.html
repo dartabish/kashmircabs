@@ -19,14 +19,115 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="script.js" />
   </head>
   <body>
-    <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between"
     >
-      <div class="container-fluid ps-lg-5 pe-lg-5">
+      <div class="container-fluid p-2 ps-lg-5 pe-lg-5">
+        <a class="navbar-brand fs-1" href="#">Kashmir Cab Service</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-lg-4 fs-5"
+            >
+              <li
+                class="nav-item d-flex justify-content-between align-items-center"
+              >
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu flex-column text-center">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../service-pages/rental-service/index.html"
+                      >Rentals</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../service-pages/airport-taxi-service/index.html"
+                      >Airport Taxi Service</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../service-pages/chauffeur-driven/index.html"
+                      >Chauffeur-Driven</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../service-pages/packages/index.html"
+                      >Tour Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about-page/index.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../contact-page/index.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+    <!-- <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between"
+    >
+      <div class="container-fluid p-2 ps-lg-5 pe-lg-5">
         <a class="navbar-brand fs-2" href="#">Kashmir Cab Service</a>
         <button
           class="navbar-toggler"
@@ -99,12 +200,14 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- Hero -->
     <div class="hero-container d-flex flex-column align-items-center gap-4 p-4">
       <div class="hero-banner d-flex flex-column gap-3">
-        <div class="hero-punchline fs-1 fw-bold">
+        <div
+          class="hero-punchline fs-1 fw-bold animate__animated animate__flipInX"
+        >
           Ride, Relax, Repeat – Kashmir Cab Service, Your Shortcut to Seamless
           Travel.
         </div>
@@ -126,18 +229,18 @@
     <!-- About Us -->
     <div class="container-fluid" id="about-and-quick-book">
       <div class="about-description">
-        <h2 class="about-title">Welcome To Kashmir Cabs</h2>
+        <h2 class="about-title text-center">Welcome To Kashmir Cab Service</h2>
         Discover the heart and soul behind our commitment to redefine travel. As
         a premier car rental and taxi booking service, we pride ourselves on
         seamlessly blending comfort, convenience, and class in every ride. Our
         dedicated team is driven by a passion for hospitality, ensuring that
         each journey is not just a commute but a cherished adventure. At Kashmir
-        Cabs, we go beyond transportation; we curate exceptional tour packages
-        designed to showcase the beauty of every destination. Whether you're a
-        local explorer or a global wanderer, our fleet of well-maintained
-        vehicles and professional drivers are here to elevate your travel
-        experience. Learn more about our story, mission, and the values that
-        steer us forward.
+        Cab Service, we go beyond transportation; we curate exceptional tour
+        packages designed to showcase the beauty of every destination. Whether
+        you're a local explorer or a global wanderer, our fleet of
+        well-maintained vehicles and professional drivers are here to elevate
+        your travel experience. Learn more about our story, mission, and the
+        values that steer us forward.
       </div>
       <br />
 
@@ -158,7 +261,7 @@
           <div class="service-action">
             <div>
               <div class="underline"></div>
-              <h2 class="service-title">Rentals</h2>
+              <h2 class="service-title">Vehicle Rentals</h2>
             </div>
             <h4 class="service-text">
               Seamless car and bike rentals for your journey's joyride.
@@ -171,16 +274,13 @@
               unforgettable journeys at your own pace. Choose from our diverse
               fleet of meticulously maintained vehicles, ranging from sleek cars
               to nimble bikes, and experience the joy of self-drive exploration.
-              Whether it's a weekend getaway, a business trip, or simply
-              satisfying your wanderlust, we provide a seamless rental
-              experience, ensuring convenience, affordability, and the thrill of
-              the driver's seat.
             </div>
           </div>
           <div class="service-image">
             <img src="../assets/landing-page/self-drive-banner.png" alt="" />
           </div>
         </div>
+        <br />
 
         <div class="service ps-2 pe-2 flex-lg-row-reverse">
           <div class="service-action">
@@ -189,22 +289,24 @@
               <h2 class="service-title">Airport Taxi Service</h2>
             </div>
             <h4 class="service-text">
-              Simplify your commute with our reliable cab services.
+              Reliable and prompt airport taxi service.
             </h4>
             <a href="../service-pages/airport-taxi-service/">
               <button class="service-button btn btn-warning">Book Now</button>
             </a>
             <div class="service-description">
-              Indulge in the epitome of stress-free commuting as our reliable
-              cab services redefine convenience. We seamlessly blend efficiency
-              with comfort, ensuring your journey is marked by simplicity and a
-              delightful travel experience.
+              Our airport taxi service is your trusted partner in hassle-free
+              travel, offering timely pickups, courteous drivers, and a
+              comfortable ride to and from the airport, so you can focus on your
+              journey, not the logistics.
             </div>
           </div>
           <div class="service-image">
             <img src="../assets/landing-page/cab-service-banner.png" alt="" />
           </div>
         </div>
+        <br />
+        <br />
 
         <div class="service ps-2 pe-2">
           <div class="service-action">
@@ -214,7 +316,7 @@
             </div>
             <h4 class="service-text">
               Arrive in style and comfort with our chauffeur-accompanied
-              service, where luxury meets the road at your command.
+              service.
             </h4>
             <a href="../service-pages/chauffeur-driven/index.html">
               <button class="service-button btn btn-warning">Book Now</button>
@@ -224,15 +326,15 @@
               Elevate your travel experience with our chauffeur-accompanied
               service. Immerse yourself in the lap of luxury as our professional
               chauffeurs take the wheel, ensuring a seamless and prestigious
-              journey. From business meetings to special events, let our
-              chauffeur-driven vehicles be the epitome of your refined taste and
-              personalized travel.
+              journey.
             </div>
           </div>
           <div class="service-image">
             <img src="../assets/landing-page/car-rental-banner.png" alt="" />
           </div>
         </div>
+        <br />
+        <br />
         <br />
 
         <div class="service ps-2 pe-2 flex-lg-row-reverse">
@@ -252,17 +354,14 @@
               meticulously planned tour packages. Whether you seek the thrill of
               adventure, the serenity of nature, or the richness of cultural
               exploration, our expertly curated itineraries cater to every
-              traveler's desires. Immerse yourself in the beauty of distant
-              lands, guided by our commitment to excellence in hospitality and
-              personalized service. Your journey begins here, where each tour
-              package is a gateway to extraordinary moments and lifelong
-              memories.
+              traveler's desires.
             </div>
           </div>
           <div class="service-image">
             <img src="../assets/landing-page/package-banner.png" alt="" />
           </div>
         </div>
+        <br />
       </div>
     </div>
     <br />
@@ -297,10 +396,10 @@
         </div>
         <div class="swiper-slide destinations-slide">
           <img
-            src="https://images.pexels.com/photos/7824514/pexels-photo-7824514.jpeg"
+            src="https://images.unsplash.com/photo-1590998012650-33f0dfe40269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Slide 3"
           />
-          <div class="caption">Jamia Masjid</div>
+          <div class="caption">Tulip Garden</div>
         </div>
         <div class="swiper-slide destinations-slide">
           <img
@@ -318,15 +417,15 @@
         </div>
         <div class="swiper-slide destinations-slide">
           <img
-            src="https://images.unsplash.com/photo-1666438238521-09e3396263a9?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1666513304881-1564056869a4?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Slide 3"
           />
           <div class="caption">Pahalgam</div>
         </div>
       </div>
       <div class="swiper-pagination destinations-pagination"></div>
-      <div class="swiper-button-prev prev-destination"></div>
-      <div class="swiper-button-next next-destination"></div>
+      <!-- <div class="swiper-button-prev prev-destination"></div>
+      <div class="swiper-button-next next-destination"></div> -->
     </div>
     <br />
     <br />
@@ -443,7 +542,7 @@
     <!-- Footer section -->
     <footer class="footer-distributed">
       <div class="footer-left">
-        <h3>Kashmir <span>Cab Service</span></h3>
+        <h3 id="footer-brand">Kashmir Cab Service</h3>
         <p class="footer-links">
           <a href="#">Home</a>
           |
@@ -461,14 +560,14 @@
       </div>
 
       <div class="footer-center">
-        <div>
+        <div class="company-location">
           <i class="fa fa-map-marker"></i>
-          <p><span>Ishber Nishat, Srinagar</span></p>
+          <p>Ishber Nishat, Srinagar</p>
         </div>
         <div>
           <i class="fa fa-envelope"></i>
           <p>
-            <a href="kashmircabservice9@gmail.com"
+            <a href="mailto:kashmircabservice9@gmail.com"
               >kashmircabservice9@gmail.com</a
             >
           </p>
@@ -476,9 +575,9 @@
 
         <div class="phone-numbers">
           <i class="fa fa-phone"></i>
-          <p>7006888129/</p>
-          <p>8803916156/</p>
-          <p>9103276655</p>
+          <a href="tel:+917006888129">7006888129</a> <span>/</span>
+          <a href="tel:8803916156">8803916156</a> <span>/</span>
+          <a href="tel:9103276655">9103276655</a>
         </div>
       </div>
       <div class="footer-right">
@@ -492,11 +591,10 @@
           <a href="https://wa.me/7006888129" target="_blank"
             ><i class="fab fa-whatsapp"></i
           ></a>
-          <a href="#"><i class="fa fa-globe"></i></a>
           <a href="https://www.instagram.com/kashmircabservice9"
             ><i class="fa fa-instagram"></i
           ></a>
-          <a href="kashmircabservice9@gmail.com"
+          <a href="mailto:kashmircabservice9@gmail.com"
             ><i class="fa fa-envelope"></i
           ></a>
         </div>

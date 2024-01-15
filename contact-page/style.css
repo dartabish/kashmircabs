@@ -66,14 +66,6 @@ form {
   position: relative;
 }
 
-.title {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-bottom: 0.7rem;
-}
-
 .input-container {
   position: relative;
   margin: 1rem 0;
@@ -196,15 +188,16 @@ textarea.input {
 
 .text {
   color: #333;
-  margin: 1.5rem 0 2rem 0;
+  font-size: 20px;
 }
 
 .information {
+  font-size: 25px;
   display: flex;
-  color: #000000;
-  margin: 0.7rem 0;
   align-items: center;
-  font-size: 1rem;
+
+  gap: 15px;
+  margin-bottom: 1rem;
 }
 
 .icon {
@@ -343,10 +336,6 @@ textarea.input {
   .information,
   .social-media p {
     font-size: 0.8rem;
-  }
-
-  .title {
-    font-size: 1.15rem;
   }
 
   .social-icons a {
