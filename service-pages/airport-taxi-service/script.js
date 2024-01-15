@@ -37,8 +37,6 @@ cabForm.addEventListener('submit', e => {
     drop: document.getElementById('drop').value,
   };
 
-  console.log(formData);
-
   let url =
     'https://wa.me/919797231194?text=' +
     'Name: ' +

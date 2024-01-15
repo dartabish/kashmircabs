@@ -42,6 +42,10 @@ h4 {
   color: #0c4a6e;
 }
 
+.navbar a:visited {
+  color: #0c4a6e;
+}
+
 .hero-container {
   height: 40vh;
   background-image: linear-gradient(
@@ -148,9 +152,6 @@ h4 {
 }
 
 /* Reviews */
-.reviews-container {
-  height: 60vh;
-}
 
 .reviews-swiper {
   width: 90%;
@@ -265,203 +266,9 @@ h4 {
   object-fit: cover;
 }
 
-.button-container {
-  display: flex;
-  gap: 5px;
-  border-radius: 8px; /* Add border-radius for rounded corners */
-}
-
-.booking-type-button {
-  flex: 1;
-  padding: 8px;
-  border: none;
-  background-color: #38f903;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px; /* Adjust font size as needed */
-  border-radius: 4px; /* Add border-radius for rounded corners */
-}
-
-.booking-type-button.active {
-  background-color: #ffe100;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .button-container {
-    display: flex;
-    width: 100%;
-
-    /* Set your desired background color */
-  }
-
-  .booking-type-button {
-    flex: none;
-    width: 48%;
-    margin-bottom: 8px;
-  }
-}
-.form-buttons {
-  width: 10px;
-  display: flex;
-}
-.form-title {
-  font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: 6px;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  border-bottom: solid 1px white;
-}
-
-.main-user-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.user-input-box:nth-child(2n) {
-  justify-content: end;
-}
-
-.user-input-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  padding-bottom: 15px;
-}
-
-.user-input-box label {
-  width: 95%;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 5px 0;
-}
-
-.user-input-box input {
-  height: 40px;
-  width: 95%;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid grey;
-  padding: 0 10px;
-}
-.choose-taxi {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.choose-taxi label {
-  display: block;
-  margin-bottom: 5px; /* Adjust margin as needed */
-}
-
-.choose-taxi select {
-  height: 40px;
-  width: 100%;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid grey;
-  padding: 0 10px;
-}
-
-@media (max-width: 600px) {
-  .container {
-    min-width: 280px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .user-input-box {
-    margin-bottom: 12px;
-    width: 50%;
-  }
-
-  .user-input-box:nth-child(2n) {
-    justify-content: space-between;
-  }
-
-  .main-user-info {
-    max-height: 445px;
-    overflow: auto;
-  }
-
-  .main-user-info::-webkit-scrollbar {
-    width: 0;
-  }
-  .form-submit-btn {
-    display: flex;
-    justify-content: end;
-  }
-}
-
-.choose-taxi select {
-  height: 40px;
-  width: 98%;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid grey;
-  padding: 0 10px;
-  margin-top: 5px;
-}
-
-.choose-taxi optgroup {
-  font-weight: bold;
-  color: #333;
-}
-
-.choose-taxi option {
-  padding: 8px;
-  font-size: 14px;
-  color: #555;
-}
-
-.choose-taxi option:hover {
-  background-color: #f0f0f0;
-  cursor: pointer;
-}
-
-.service-image-container {
-  border-radius: 8px;
-  height: 220px;
-  width: 100%;
-  transition: transform 0.3s ease-in-out;
-}
-.service:hover .service-image-container {
-  transform: scale(1.1);
-}
-.service-image-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.image-container:hover .rental-image {
-  transform: scale(1.1);
-}
-
-.description {
-  margin-top: 10px;
-  text-align: center;
-}
-
 .service-button {
   margin-top: 12px;
   width: 8rem;
-  padding: 10px 16px;
-
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.service-button:hover {
-  /* background-color: #0056b3; */
 }
 
 /* Gallery section */
@@ -491,6 +298,7 @@ h4 {
   height: 100%;
   object-fit: cover;
 }
+
 .caption {
   position: absolute;
   top: 20px; /* Adjusted to position the caption at the top */
@@ -498,7 +306,6 @@ h4 {
   transform: translateX(-50%); /* Adjust the position to the center */
   text-align: center;
   color: #fff;
-
   font-size: 29px;
   max-width: 80%; /* Limit the width of the caption */
   /* Add a semi-transparent background */
@@ -507,6 +314,7 @@ h4 {
   font-family: 'Rubik Doodle Triangles', system-ui;
   font-family: 'Satisfy', cursive;
 }
+
 @media (max-width: 600px) {
   .caption {
     position: absolute;
@@ -522,20 +330,8 @@ h4 {
     border-radius: 8px;
   }
 }
-/* Footer section */
-footer {
-  position: fixed;
-  bottom: 0;
-}
 
-@media (max-height: 800px) {
-  footer {
-    position: static;
-  }
-  header {
-    padding-top: 40px;
-  }
-}
+/* Footer section */
 
 .footer-distributed {
   background-color: #083149;
@@ -543,7 +339,7 @@ footer {
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 50px 50px 60px 50px;
+  padding: 20px;
 }
 
 .footer-distributed .footer-left,
