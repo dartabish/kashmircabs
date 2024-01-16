@@ -40,7 +40,7 @@
 
 .vehicle-card {
   width: 350px;
-  height: 400px;
+  height: 450px;
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -51,6 +51,7 @@
 }
 
 .vehicle-img-container {
+  padding: 10px;
   height: 60%;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
@@ -63,21 +64,21 @@
 }
 
 .vehicle-details {
-  padding: 20px;
+  padding: 0 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 30%;
 }
 
 .vehicle-title {
   font-size: 1.5em;
-  margin-bottom: 10px;
-  margin-top: 15px;
-  padding: 7px;
+  padding: 20px 15px 0;
 }
 
 .d-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .vehicle-capacity,

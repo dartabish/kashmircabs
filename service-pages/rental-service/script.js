@@ -93,19 +93,22 @@ const bikeCollection = [
     id: 'bike-1',
     name: 'Royal Enfield Himalayan',
     seats: 2,
-    image: '../../assets/sub-pages/car-rental/himalyan.png',
+    baggage: 1,
+    image: '../../assets/sub-pages/car-rental/himalayan.png',
   },
   {
     id: 'bike-2',
     name: 'Royal Enfield Classic',
     seats: 2,
+    baggage: 1,
     image: '../../assets/sub-pages/car-rental/classic.png',
   },
   {
     id: 'bike-3',
     name: 'Royal Enfield Thunderbird',
     seats: 2,
-    image: '../../assets/sub-pages/car-rental/royal thunderbird.png',
+    baggage: 1,
+    image: '../../assets/sub-pages/car-rental/thunderbird.png',
   },
 ];
 
@@ -165,7 +168,7 @@ function displayVehicles(object, container) {
             <img src="${vehicle.image}" alt="${vehicle.name} Image"/>
             </div>
             <h3 class="vehicle-title">${vehicle.name}</h3>
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="vehicle-details d-flex align-items-center justify-content-between">
             <div >
               <span class="vehicle-capacity">
               <i class="fa-solid fa-user"></i>
@@ -300,26 +303,8 @@ function displayVehicles(object, container) {
   });
 }
 
-/* document
-  .getElementById(`bookingForm${vehicle.id}`)
-  .addEventListener('submit', e => {
-    console.log('work');
-    e.preventDefault();
-
-    const formData = getFormData(vehicle.id);
-
-    let url = 'https://wa.me/919797231194?text=';
-    for (const [key, value] of Object.entries(formData)) {
-      url += `${key}: ${encodeURIComponent(value)}%0a`;
-    }
-
-    window.open(url, '_blank').focus();
-  });
- */
-
-// Function to handle form submission
 function handleFormSubmission(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+  event.preventDefault();
 
   // Extract form data
   let vehicleId = event.target.getAttribute('data-vehicle-id');
@@ -356,7 +341,6 @@ function handleFormSubmission(event) {
   window.open(url, '_blank').focus();
 }
 
-// Add a global event listener for form submissions
 document.addEventListener('submit', function (event) {
   if (event.target.classList.contains('booking-form')) {
     handleFormSubmission(event);
@@ -364,6 +348,3 @@ document.addEventListener('submit', function (event) {
 
   location.reload();
 });
-
-// Call displayVehicles function to display product cards
-// displayVehicles(object, container);

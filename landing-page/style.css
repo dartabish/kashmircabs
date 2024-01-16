@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 *,
 h1,
@@ -106,9 +107,9 @@ h4 {
 .about-title {
   color: #0c4a6e;
   padding-bottom: 1rem;
-  font-family: 'Dancing Script', cursive;
   font-size: 2.25rem;
   font-weight: 700;
+  font-family: 'Salsa', cursive;
 }
 
 .about-description {
@@ -293,6 +294,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .swiper-title {
@@ -308,43 +310,17 @@ h4 {
 }
 
 .caption {
-  position: absolute;
-  top: 20px; /* Adjusted to position the caption at the top */
-  left: 12%; /* Center the caption horizontally */
-  transform: translateX(-50%); /* Adjust the position to the center */
-  text-align: center;
   color: #fff;
   font-size: 40px;
-  max-width: 80%; /* Limit the width of the caption */
-  /* Add a semi-transparent background */
-  padding: 10px; /* Add some padding for better visibility */
-  border-radius: 8px;
   font-family: 'Dancing Script', cursive;
-}
-
-@media (max-width: 600px) {
-  .caption {
-    position: absolute;
-    top: 30px; /* Adjusted to position the caption at the top */
-    left: 25%; /* Center the caption horizontally */
-    transform: translateX(-50%); /* Adjust the position to the center */
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    max-width: 80%; /* Limit the width of the caption */
-    /* Add a semi-transparent background */
-    padding: 10px; /* Add some padding for better visibility */
-    border-radius: 8px;
-  }
+  position: absolute;
+  top: 5%;
+  left: 10%;
 }
 
 /* Footer section */
 .phone-numbers a {
   color: rgb(232, 232, 232);
-}
-
-.company-location p {
-  font-size: 16px;
 }
 
 .phone-numbers span {
@@ -435,8 +411,9 @@ h4 {
 
 .footer-distributed .footer-center p span {
   display: block;
-  font-weight: normal;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
   line-height: 2;
 }
 
