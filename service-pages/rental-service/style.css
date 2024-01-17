@@ -51,9 +51,8 @@
 }
 
 .vehicle-img-container {
-  padding: 10px;
   height: 60%;
-  overflow: hidden;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -85,7 +84,7 @@
 .vehicle-baggage {
   display: block;
   margin-bottom: 8px;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 7px;
 }
 

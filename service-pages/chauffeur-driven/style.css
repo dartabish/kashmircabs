@@ -27,7 +27,6 @@
 
 .section-title {
   font-size: 2em;
-  margin-bottom: 20px;
 }
 
 .cars-container {
@@ -40,7 +39,7 @@
 
 .car-card {
   width: 350px;
-  height: 400px;
+  height: 450px;
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -51,40 +50,40 @@
 }
 
 .car-img-container {
-  height: 50%;
-  overflow: hidden;
+  height: 60%;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
 .car-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .car-details {
-  padding: 20px;
+  padding: 0 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 30%;
 }
 
 .car-title {
   font-size: 1.5em;
-  margin-bottom: 10px;
-  margin-top: 15px; /* Adjusted margin-top */
-  padding: 7px;
+  padding: 20px 15px 0;
 }
 
 .d-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .car-capacity,
 .car-baggage {
   display: block;
   margin-bottom: 8px;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 7px;
 }
 

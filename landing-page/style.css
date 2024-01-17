@@ -46,12 +46,27 @@ h4 {
   padding: 0;
 }
 
-.navbar a {
+.navbar a,
+.offcanvas-title {
   color: #0c4a6e;
+}
+
+.offcanvas-title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
 }
 
 .navbar a:visited {
   color: #0c4a6e;
+}
+
+.dropdown-item {
+  font-size: 18px;
+  text-align: left;
+}
+
+.offcanvas {
+  width: 65% !important;
 }
 
 .hero-container {

@@ -96,10 +96,10 @@ carCollection.forEach(car => {
   <img src="${car.image}" alt="${car.name} Image"/>
   </div>
   <h3 class="car-title">${car.name}</h3>
-  <div class="d-flex align-items-center justify-content-between">
+  <div class="car-details d-flex align-items-center justify-content-between">
   <div >
     <span class="car-capacity">
-    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-user "></i>
     Seats: ${car.seats} </span>
     <span class="car-baggage">
     <i class="fa-solid fa-suitcase-rolling"></i>
