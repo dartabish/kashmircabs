@@ -37,8 +37,7 @@ h4 {
 }
 
 .navbar-brand {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .navbar-collapse {
@@ -52,7 +51,6 @@ h4 {
 }
 
 .offcanvas-title {
-  font-family: 'Dancing Script', cursive;
   font-weight: 600;
 }
 
@@ -82,8 +80,8 @@ h4 {
   text-align: center;
   color: #0c4a6e;
 }
+
 .hero-punchline {
-  font-family: 'Dancing Script', cursive;
   color: white;
   font-size: 2rem;
 }
@@ -123,8 +121,7 @@ h4 {
   color: #0c4a6e;
   padding-bottom: 1rem;
   font-size: 2.25rem;
-  font-weight: 700;
-  font-family: 'Salsa', cursive;
+  font-weight: 600;
 }
 
 .about-description {
