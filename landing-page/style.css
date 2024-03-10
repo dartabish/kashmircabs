@@ -67,8 +67,12 @@ h4 {
   width: 65% !important;
 }
 
+.offcanvas-header {
+  padding-bottom: 0;
+}
+
 .hero-container {
-  height: 40vh;
+  height: 60vh;
   background-image: url('../assets/sub-pages/packages/package-4.jpg');
   background-size: cover;
   background-position: center;
@@ -83,7 +87,7 @@ h4 {
 
 .hero-punchline {
   color: white;
-  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 .mini-description {

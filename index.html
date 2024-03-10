@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kashmir Cab Service</title>
+    <title>Two Brother Planners</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,7 +30,7 @@
       class="navbar navbar-expand-lg bg-body-tertiary sticky-top justify-content-between"
     >
       <div class="container-fluid p-2 ps-lg-5 pe-lg-5">
-        <a class="navbar-brand fs-1" href="#">Kashmir Cab Service</a>
+        <a class="navbar-brand fs-1" href="#">Two Brother Planners</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,7 +48,7 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">KCS</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
             <button
               type="button"
               class="btn-close"
@@ -80,6 +80,13 @@
                   <li>
                     <a
                       class="dropdown-item"
+                      href="../service-pages/packages/index.html"
+                      >Tour Packages</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
                       href="../service-pages/rental-service/index.html"
                       >Rentals</a
                     >
@@ -97,13 +104,6 @@
                       class="dropdown-item"
                       href="../service-pages/chauffeur-driven/index.html"
                       >Chauffeur-Driven</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="../service-pages/packages/index.html"
-                      >Tour Packages</a
                     >
                   </li>
                 </ul>
@@ -124,12 +124,13 @@
     </nav>
 
     <!-- Hero -->
-    <div class="hero-container d-flex flex-column align-items-center gap-4 p-4">
+    <div
+      class="hero-container d-flex flex-column justify-content-center align-items-center gap-4 p-4"
+    >
       <div class="hero-banner d-flex flex-column gap-3">
-        <div class="hero-punchline fs-1 animate__animated animate__flipInX">
-          Ride, Relax, Repeat – Kashmir Cab Service, Your Shortcut to Seamless
-          Travel.
-        </div>
+        <h1 class="hero-punchline animate__animated animate__flipInX">
+          Explore the world with us
+        </h1>
       </div>
       <a href="#services-section">
         <button id="explore-our-services" class="btn btn-warning">
@@ -142,18 +143,17 @@
     <!-- About Us -->
     <div class="container-fluid" id="about-and-quick-book">
       <div class="about-description">
-        <h2 class="about-title">India's Leading Cab Service</h2>
-        Discover the heart and soul behind our commitment to redefine travel. As
-        a premier car rental and taxi booking service, we pride ourselves on
-        seamlessly blending comfort, convenience, and class in every ride. Our
-        dedicated team is driven by a passion for hospitality, ensuring that
-        each journey is not just a commute but a cherished adventure. At Kashmir
-        Cab Service, we go beyond transportation; we curate exceptional tour
-        packages designed to showcase the beauty of every destination. Whether
-        you're a local explorer or a global wanderer, our fleet of
-        well-maintained vehicles and professional drivers are here to elevate
-        your travel experience. Learn more about our story, mission, and the
-        values that steer us forward.
+        <h2 class="about-title">Turning Miles into Smiles !</h2>
+        Embark on a journey where each step is a story waiting to unfold,
+        especially with our bespoke packages to the serene valleys of Kashmir
+        and the rugged terrains of Ladakh. From the blooming gardens of Srinagar
+        and the tranquil waters of Dal Lake in Kashmir to the mystical
+        monasteries and breathtaking landscapes of Ladakh, we curate your trip
+        to ensure a seamless blend of adventure, culture, and relaxation. Enjoy
+        personalized itineraries that cater to your pace and preference,
+        complete with exceptional service to make your journey unforgettable.
+        With us, every destination is an invitation to discover wonders and
+        create memories that last a lifetime.
       </div>
       <br />
       <div class="welcome-container">
@@ -167,8 +167,39 @@
     <div class="" id="services-section">
       <h1 class="section-title">What We Offer</h1>
       <br />
+      <br />
 
       <div class="service-container container-fluid">
+        <div class="service ps-2 pe-2 flex-lg-row-reverse">
+          <div class="service-action">
+            <div>
+              <div class="underline"></div>
+              <h2 class="service-title">Tour Packages</h2>
+            </div>
+            <h4 class="service-text">
+              Explore the world with our curated tour packages.
+            </h4>
+            <a href="../service-pages/packages/index.html">
+              <button class="service-button btn btn-warning">Book Now</button>
+            </a>
+            <div class="service-description">
+              Uncover the wonders of the world with our diverse array of
+              meticulously planned tour packages. Whether you seek the thrill of
+              adventure, the serenity of nature, or the richness of cultural
+              exploration, our expertly curated itineraries cater to every
+              traveler's desires.
+            </div>
+          </div>
+          <div class="service-image">
+            <img
+              src="../assets/landing-page/package-banner.png"
+              alt="package-banner"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <br />
+
         <div class="service ps-2 pe-2">
           <div class="service-action">
             <div>
@@ -261,34 +292,6 @@
         <br />
         <br />
 
-        <div class="service ps-2 pe-2 flex-lg-row-reverse">
-          <div class="service-action">
-            <div>
-              <div class="underline"></div>
-              <h2 class="service-title">Tour Packages</h2>
-            </div>
-            <h4 class="service-text">
-              Explore the world with our curated tour packages.
-            </h4>
-            <a href="../service-pages/packages/index.html">
-              <button class="service-button btn btn-warning">Book Now</button>
-            </a>
-            <div class="service-description">
-              Uncover the wonders of the world with our diverse array of
-              meticulously planned tour packages. Whether you seek the thrill of
-              adventure, the serenity of nature, or the richness of cultural
-              exploration, our expertly curated itineraries cater to every
-              traveler's desires.
-            </div>
-          </div>
-          <div class="service-image">
-            <img
-              src="../assets/landing-page/package-banner.png"
-              alt="package-banner"
-              loading="lazy"
-            />
-          </div>
-        </div>
         <br />
       </div>
     </div>
@@ -373,7 +376,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Kashmir Cab Service – where every ride is a scenic escape,
+              "Two Brother Planners – where every ride is a scenic escape,
               blending comfort with the breathtaking beauty of the valley."
             </p>
             <div class="reviewer-profile">
@@ -389,7 +392,7 @@
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
               "Effortless booking, friendly drivers, and a touch of Kashmiri
-              hospitality – Kashmir Cab Service makes your journey as memorable
+              hospitality – Two Brother Planners makes your journey as memorable
               as the destination."
             </p>
             <div class="reviewer-profile">
@@ -404,7 +407,7 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Kashmir Cab Service - your ticket to hassle-free journeys with a
+              "Two Brother Planners - your ticket to hassle-free journeys with a
               touch of warmth. Effortless, efficient, and endlessly scenic!"
             </p>
             <div class="reviewer-profile">
@@ -435,7 +438,7 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Unlock the charm of Kashmir with Kashmir Cab Service - where
+              "Unlock the charm of Kashmir with Two Brother Planners - where
               comfort meets the extraordinary. Each ride is a story, and yours
               begins with them."
             </p>
@@ -451,7 +454,7 @@
           </div>
           <div class="swiper-slide reviews-slide">
             <p class="review-text">
-              "Kashmir Cab Service - Redefining travel elegance, seamlessly
+              "Two Brother Planners - Redefining travel elegance, seamlessly
               blending comfort and culture. Your ride with them is not just a
               trip; it's an enchanting experience."
             </p>
@@ -479,7 +482,7 @@
       class="footer-distributed d-xl-flex align-items-baseline justify-content-center"
     >
       <div class="footer-left">
-        <h3 id="footer-brand">Kashmir Cab Service</h3>
+        <h3 id="footer-brand">Two Brother Planners</h3>
         <p class="footer-links">
           <a href="#">Home</a>
           |
@@ -491,7 +494,7 @@
         </p>
 
         <p class="footer-company-name">
-          Copyright © 2024 <strong>Kashmir Cab Service</strong> All rights
+          Copyright © 2024 <strong>Two Brother Planners</strong> All rights
           reserved
         </p>
       </div>
@@ -504,8 +507,8 @@
         <div>
           <i class="fa fa-envelope"></i>
           <p>
-            <a href="mailto:kashmircabservice9@gmail.com"
-              >kashmircabservice9@gmail.com</a
+            <a href="mailto:info@twobrotherplanners.com"
+              >info@twobrotherplanners.com</a
             >
           </p>
         </div>
@@ -521,7 +524,7 @@
       <div class="footer-right">
         <p class="footer-company-about">
           <span>About the company</span>
-          <strong>Kashmir Cab Service</strong> "Your gateway to hassle-free and
+          <strong>Two Brother Planners</strong> "Your gateway to hassle-free and
           comfortable travel in the stunning landscapes of Kashmir. Explore with
           confidence, ride with convenience."
         </p>
@@ -532,7 +535,7 @@
           <a href="https://www.instagram.com/kashmircabservice9"
             ><i class="fa fa-instagram"></i
           ></a>
-          <a href="mailto:kashmircabservice9@gmail.com"
+          <a href="mailto:info@twobrotherplanners.com"
             ><i class="fa fa-envelope"></i
           ></a>
         </div>
